@@ -20,6 +20,11 @@ module TestHelper
     assert_equal expected_binomial_string, actual_binomial_string, failure_message
   end
 
+  def assert_observers_equals(expected_observers_string, hornsby_herbarium_spreadsheet_filename, failure_message)
+    hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
+    actual_observers_string = hornsby_herbarium_parser.observers.to_s
+    assert_equal expected_observers_string, actual_observers_string, failure_message
+  end
 end
 
 class TestHornsbyHerbariumParser < Test::Unit::TestCase
@@ -39,4 +44,10 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     assert_first_entry_binomial_equals expected_binomial_string, hornsby_herbarium_spreadsheet_filename, failure_message
   end
 
+  def test_observer_parsing
+    hornsby_herbarium_spreadsheet_filename = SIMPLE_EXAMPLE_SPREADSHEET_FILENAME
+    expected_observers_string = "Andrew Grimm"
+    failure_message = "Can't parse observers"
+    assert_observers_equals expected_observers_string, hornsby_herbarium_spreadsheet_filename, failure_message
+  end
 end
