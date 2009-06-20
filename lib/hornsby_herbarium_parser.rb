@@ -1,6 +1,8 @@
 require "roo"
 
 class HornsbyHerbariumParser
+  attr_reader :entries
+
   def self.new_using_filename(filename)
       self.new(filename)
   end
@@ -22,6 +24,7 @@ class HornsbyHerbariumParser
 end
 
 class HornsbyHerbariumEntry
+  attr_reader :binomial
 
   def self.new_if_valid(row)
     return nil if row.nil?
@@ -32,5 +35,10 @@ class HornsbyHerbariumEntry
   end
 
   def initialize(row)
+    #Assumption: all row members are strings
+    genus = row[1].strip
+    species = row[2].strip
+    @binomial = [genus, species].join(" ")
   end
+
 end
