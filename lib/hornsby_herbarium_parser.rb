@@ -1,3 +1,4 @@
+require "rubygems"
 require "roo"
 
 class HornsbyHerbariumParser
@@ -86,6 +87,19 @@ class HornsbyHerbariumEntryCreator
     result = HornsbyHerbariumEntry.new_if_valid(row, @entries_created + 1)
     @entries_created += 1 unless result.nil?
     result
+  end
+
+end
+
+class HornsbyHerbariumSpreadsheet
+  attr_reader :entries, :observers, :location
+
+  def self.new_using_values(entries, observers, location)
+    new(entries, observers, location)
+  end
+
+  def initialize(entries, observers, location)
+    @entries, @observers, @location = entries, observers, location
   end
 
 end
