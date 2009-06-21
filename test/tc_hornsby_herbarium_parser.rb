@@ -27,6 +27,12 @@ module TestHelper
     assert_equal expected_observers_string, actual_observers_string, failure_message
   end
 
+  def assert_location_equals(expected_location_string, hornsby_herbarium_spreadsheet_filename, failure_message)
+    hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
+    actual_location_string = hornsby_herbarium_parser.location.to_s
+    assert_equal expected_location_string, actual_location_string, failure_message
+  end
+
   def assert_sighting_date_string_equals(expected_date_string, hornsby_herbarium_spreadsheet_filename, failure_message)
     hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
     actual_date_string = hornsby_herbarium_parser.sighting_date_string
@@ -66,6 +72,13 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     assert_observers_equals expected_observers_string, hornsby_herbarium_spreadsheet_filename, failure_message
   end
 
+  def test_location_parsing
+    hornsby_herbarium_spreadsheet_filename = SIMPLE_EXAMPLE_SPREADSHEET_FILENAME
+    expected_location_string = "Las Vegas"
+    failure_message = "Can't parse location"
+    assert_location_equals expected_location_string, hornsby_herbarium_spreadsheet_filename, failure_message
+  end
+
   def test_date_parsing
     hornsby_herbarium_spreadsheet_filename = SMALLER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME
     expected_date_string = "15/5/2009"
@@ -86,4 +99,5 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     failure_message = "Can't do relative sequential numbers"
     assert_relative_sequential_numbers_equals expected_relative_sequential_numbers, hornsby_herbarium_spreadsheet_filename, failure_message
   end
+
 end

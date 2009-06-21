@@ -1,7 +1,7 @@
 require "roo"
 
 class HornsbyHerbariumParser
-  attr_reader :entries, :observers
+  attr_reader :entries, :observers, :location
 
   def self.new_using_filename(filename)
       self.new(filename)
@@ -9,6 +9,7 @@ class HornsbyHerbariumParser
 
   def initialize(filename)
     @observers_list = ObserverList.new #A list of known observers, as opposed to those in this spreadsheet
+    @location_parser = LocationParser.new #Trying a more encapsulated approach than ObserverList
     @hornsby_herbarium_entry_creator = HornsbyHerbariumEntryCreator.new
     @date = parse_date_from_filename(filename)
     excel = Excel.new(filename)
@@ -23,6 +24,8 @@ class HornsbyHerbariumParser
       if row_has_observers?(row)
         @observers = parse_observer_row(row)
       end
+      location = @location_parser.parse_row(row)
+      @location = location unless location.nil?
     end
   end
 
@@ -117,4 +120,20 @@ class ObserverList
     @observers.any?{|observer| string.include?(observer)}
   end
 
+end
+
+class LocationParser
+  def initialize
+    @known_locations = File.read("config/locations.txt").split("\n")
+  end
+
+  def parse_row(row)
+    return nil if row[0].nil?
+    potential_location_string = row[0]
+    if @known_locations.any?{|known_location| potential_location_string == known_location}
+      potential_location_string
+    else
+      nil
+    end
+  end
 end
