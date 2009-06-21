@@ -6,6 +6,7 @@ require "hornsby_herbarium_parser"
 
 module TestHelper
   SMALLER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME = "test/example_spreadsheets/Berowra Creek 150509.xls" #Not in revision control for copyright reasons
+  LARGER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME = "test/example_spreadsheets/Berowra 15052009Species List.xls"
   SIMPLE_EXAMPLE_SPREADSHEET_FILENAME = "test/example_spreadsheets/Simple example 1.xls"
 
   def assert_parser_entries_equals(expected_count, hornsby_herbarium_spreadsheet_filename, failure_message)
@@ -24,6 +25,12 @@ module TestHelper
     hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
     actual_observers_string = hornsby_herbarium_parser.observers.to_s
     assert_equal expected_observers_string, actual_observers_string, failure_message
+  end
+
+  def assert_sighting_date_string_equals(expected_date_string, hornsby_herbarium_spreadsheet_filename, failure_message)
+    hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
+    actual_date_string = hornsby_herbarium_parser.sighting_date_string
+    assert_equal expected_date_string, actual_date_string, failure_message
   end
 end
 
@@ -50,4 +57,19 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     failure_message = "Can't parse observers"
     assert_observers_equals expected_observers_string, hornsby_herbarium_spreadsheet_filename, failure_message
   end
+
+  def test_date_parsing
+    hornsby_herbarium_spreadsheet_filename = SMALLER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME
+    expected_date_string = "15/5/2009"
+    failure_message = "Can't parse dates"
+    assert_sighting_date_string_equals expected_date_string, hornsby_herbarium_spreadsheet_filename, failure_message
+  end
+
+  def test_four_year_date_parsing
+    hornsby_herbarium_spreadsheet_filename = LARGER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME
+    expected_date_string = "15/5/2009"
+    failure_message = "Can't parse dates"
+    assert_sighting_date_string_equals expected_date_string, hornsby_herbarium_spreadsheet_filename, failure_message
+  end
+
 end

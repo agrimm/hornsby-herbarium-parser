@@ -9,6 +9,7 @@ class HornsbyHerbariumParser
 
   def initialize(filename)
     @observers_list = ObserverList.new #A list of known observers, as opposed to those in this spreadsheet
+    @date = parse_date_from_filename(filename)
     excel = Excel.new(filename)
     excel.default_sheet = excel.sheets.first #Assumption: only the first sheet is used in a spreadsheet
     @entries = []
@@ -38,6 +39,36 @@ class HornsbyHerbariumParser
 
   def entry_count
     @entries.size
+  end
+
+  def parse_date_from_filename(filename)
+    if filename =~ /(\d{8})/
+      date_string = $1
+      day = date_string[0..1].to_i #This uses Australian-style date formatting
+      month = date_string[2..3].to_i
+      year = date_string[4..7].to_i
+      result = Date.parse("#{year}-#{month}-#{day}", false)
+    elsif filename =~ /(\d{6})/
+      date_string = $1
+      day = date_string[0..1].to_i
+      month = date_string[2..3].to_i
+      year = date_string[4..5].to_i
+      result = Date.parse("#{year}-#{month}-#{day}", true)
+    else
+      result = nil
+    end
+    return result if result.nil?
+    raise "Date is too early" if result.year < 1990
+    raise "Date is in the future" if result > Date.today
+    result
+  end
+
+  def sighting_date_string
+    if @date.nil?
+      ""
+    else
+      "#{@date.day}/#{@date.month}/#{@date.year}"
+    end
   end
 end
 
