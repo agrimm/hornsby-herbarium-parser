@@ -12,9 +12,10 @@ class WildlifeAtlasComposer
     @excel.to_csv(filename)
     File.open(filename, "a") do |file|
       @hornsby_herbarium_spreadsheet.entries.each do |entry|
-        values = [entry.relative_sequential_number,nil,nil,nil, entry.binomial, @hornsby_herbarium_spreadsheet.sighting_date_string, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, @hornsby_herbarium_spreadsheet.location, nil, nil, nil, nil, nil, nil, nil, @hornsby_herbarium_spreadsheet.observers, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil].each do |cell|
+        values = [entry.relative_sequential_number,nil,nil,nil, entry.binomial, @hornsby_herbarium_spreadsheet.sighting_date_string, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, @hornsby_herbarium_spreadsheet.location, nil, nil, nil, nil, nil, nil, nil, @hornsby_herbarium_spreadsheet.observers, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil].map do |cell|
           cell ||= ""
-          value = '"#{cell}"' #Not properly escaped
+          value = "\"#{cell}\"" #Not properly escaped
+          value
         end
         file.puts(values.join(","))
       end
