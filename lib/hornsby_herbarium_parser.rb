@@ -92,14 +92,14 @@ class HornsbyHerbariumEntryCreator
 end
 
 class HornsbyHerbariumSpreadsheet
-  attr_reader :entries, :observers, :location
+  attr_reader :entries, :observers, :observation_date_string, :location
 
-  def self.new_using_values(entries, observers, location)
-    new(entries, observers, location)
+  def self.new_using_values(entries, observers, observation_date_string, location)
+    new(entries, observers, observation_date_string, location)
   end
 
-  def initialize(entries, observers, location)
-    @entries, @observers, @location = entries, observers, location
+  def initialize(entries, observers, observation_date_string, location)
+    @entries, @observers, @observation_date_string, @location = entries, observers, observation_date_string, location
   end
 
 end
@@ -112,13 +112,13 @@ class HornsbyHerbariumEntry
     return nil unless row.length > 3
     return nil unless (row[0] and row[1] and row[2] and row[3])
     return nil unless (row[3] == "x" or row[3] == "X")
-    new(row, relative_sequential_number)
-  end
-
-  def initialize(row, relative_sequential_number)
     #Assumption: all row members are strings
     genus = row[1].strip
     species = row[2].strip
+    new(genus, species, relative_sequential_number)
+  end
+
+  def initialize(genus, species, relative_sequential_number)
     @binomial = [genus, species].join(" ")
     @relative_sequential_number = relative_sequential_number
   end
