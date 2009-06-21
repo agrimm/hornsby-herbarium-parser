@@ -96,14 +96,14 @@ class HornsbyHerbariumEntryCreator
 end
 
 class HornsbyHerbariumSpreadsheet
-  attr_reader :entries, :observers, :observation_date_string, :location
+  attr_reader :entries, :observers, :sighting_date_string, :location
 
-  def self.new_using_values(entries, observers, observation_date_string, location)
-    new(entries, observers, observation_date_string, location)
+  def self.new_using_values(entries, observers, sighting_date_string, location)
+    new(entries, observers, sighting_date_string, location)
   end
 
-  def initialize(entries, observers, observation_date_string, location)
-    @entries, @observers, @observation_date_string, @location = entries, observers, observation_date_string, location
+  def initialize(entries, observers, sighting_date_string, location)
+    @entries, @observers, @sighting_date_string, @location = entries, observers, sighting_date_string, location
   end
 
 end
