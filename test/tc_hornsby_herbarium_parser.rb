@@ -32,6 +32,14 @@ module TestHelper
     actual_date_string = hornsby_herbarium_parser.sighting_date_string
     assert_equal expected_date_string, actual_date_string, failure_message
   end
+
+  def assert_relative_sequential_numbers_equals(expected_relative_sequential_numbers, hornsby_herbarium_spreadsheet_filename, failure_message)
+    hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
+    hornsby_herbarium_entries = hornsby_herbarium_parser.entries
+    actual_relative_sequential_numbers = hornsby_herbarium_entries.map {|entry| entry.relative_sequential_number}
+    assert_equal expected_relative_sequential_numbers, actual_relative_sequential_numbers, failure_message
+  end
+
 end
 
 class TestHornsbyHerbariumParser < Test::Unit::TestCase
@@ -72,4 +80,10 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     assert_sighting_date_string_equals expected_date_string, hornsby_herbarium_spreadsheet_filename, failure_message
   end
 
+  def test_relative_sequential_number
+    hornsby_herbarium_spreadsheet_filename = SMALLER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME
+    expected_relative_sequential_numbers = [1,2,3,4,5,6,7,8,9,10, 11,12,13,14,15,16,17,18,19,20, 21,22,23,24,25,26,27,28,29]
+    failure_message = "Can't do relative sequential numbers"
+    assert_relative_sequential_numbers_equals expected_relative_sequential_numbers, hornsby_herbarium_spreadsheet_filename, failure_message
+  end
 end

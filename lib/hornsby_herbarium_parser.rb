@@ -9,6 +9,7 @@ class HornsbyHerbariumParser
 
   def initialize(filename)
     @observers_list = ObserverList.new #A list of known observers, as opposed to those in this spreadsheet
+    @hornsby_herbarium_entry_creator = HornsbyHerbariumEntryCreator.new
     @date = parse_date_from_filename(filename)
     excel = Excel.new(filename)
     excel.default_sheet = excel.sheets.first #Assumption: only the first sheet is used in a spreadsheet
@@ -16,7 +17,7 @@ class HornsbyHerbariumParser
     0.upto(excel.last_row) do |line_number|
       row = excel.row(line_number)
       next if row.nil?
-      entry = HornsbyHerbariumEntry.new_if_valid(row)
+      entry = @hornsby_herbarium_entry_creator.create_if_valid(row)
       @entries << entry unless entry.nil?
       next unless entry.nil?
       if row_has_observers?(row)
@@ -72,22 +73,37 @@ class HornsbyHerbariumParser
   end
 end
 
-class HornsbyHerbariumEntry
-  attr_reader :binomial
+class HornsbyHerbariumEntryCreator
 
-  def self.new_if_valid(row)
+  def initialize
+    @entries_created = 0
+  end
+
+  def create_if_valid(row)
+    result = HornsbyHerbariumEntry.new_if_valid(row, @entries_created + 1)
+    @entries_created += 1 unless result.nil?
+    result
+  end
+
+end
+
+class HornsbyHerbariumEntry
+  attr_reader :binomial, :relative_sequential_number
+
+  def self.new_if_valid(row, relative_sequential_number)
     return nil if row.nil?
     return nil unless row.length > 3
     return nil unless (row[0] and row[1] and row[2] and row[3])
     return nil unless (row[3] == "x" or row[3] == "X")
-    new(row)
+    new(row, relative_sequential_number)
   end
 
-  def initialize(row)
+  def initialize(row, relative_sequential_number)
     #Assumption: all row members are strings
     genus = row[1].strip
     species = row[2].strip
     @binomial = [genus, species].join(" ")
+    @relative_sequential_number = relative_sequential_number
   end
 
 end
