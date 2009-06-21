@@ -75,6 +75,10 @@ class HornsbyHerbariumParser
       "#{@date.day}/#{@date.month}/#{@date.year}"
     end
   end
+
+  def to_spreadsheet
+    HornsbyHerbariumSpreadsheet.new_using_values(@entries, @observers, sighting_date_string, @location)
+  end
 end
 
 class HornsbyHerbariumEntryCreator
