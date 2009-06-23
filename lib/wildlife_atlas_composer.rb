@@ -13,8 +13,11 @@ class WildlifeAtlasComposer
     File.open(filename, "a") do |file|
       @hornsby_herbarium_spreadsheet.entries.each do |entry|
         values = [entry.relative_sequential_number,nil,nil,nil, entry.binomial, @hornsby_herbarium_spreadsheet.sighting_date_string, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, @hornsby_herbarium_spreadsheet.location, nil, nil, nil, nil, nil, nil, nil, @hornsby_herbarium_spreadsheet.observers, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil].map do |cell|
-          cell ||= ""
-          value = "\"#{cell}\"" #Not properly escaped
+          if cell.nil?
+            value = ""
+          else
+            value = "\"#{cell}\"" #Not properly escaped
+          end
           value
         end
         file.puts(values.join(","))
