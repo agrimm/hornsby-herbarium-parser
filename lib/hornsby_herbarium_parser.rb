@@ -109,6 +109,7 @@ class HornsbyHerbariumSpreadsheet
 
   def initialize(entries, observers, sighting_date_string, location)
     @entries, @observers, @sighting_date_string, @location = entries, observers, sighting_date_string, location
+    raise "Unknown location" unless @location
   end
 
 end
