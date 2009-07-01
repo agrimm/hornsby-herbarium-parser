@@ -113,9 +113,8 @@ class HornsbyHerbariumEntry
 
   def self.new_if_valid(row, relative_sequential_number)
     return nil if row.nil?
-    return nil unless row.length > 3
-    return nil unless (row[0] and row[1] and row[2] and row[3])
-    return nil unless (row[3] == "x" or row[3] == "X")
+    return nil unless row.length > 2
+    return nil unless (row[0] and row[1] and row[2])
     #Assumption: all row members are strings
     genus = row[1].strip
     species = row[2].strip
