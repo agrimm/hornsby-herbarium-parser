@@ -12,6 +12,8 @@ class HornsbyHerbariumParser
     @observers_list = ObserverList.new #A list of known observers, as opposed to those in this spreadsheet
     @location_parser = LocationParser.new #Trying a more encapsulated approach than ObserverList
     @hornsby_herbarium_entry_creator = HornsbyHerbariumEntryCreator.new
+    basename = File.basename(filename, ".*")
+    @location = @location_parser.parse_string(basename)
     @date = parse_date_from_filename(filename)
     @date_parser = DateParser.new
     excel = Excel.new(filename)
@@ -149,7 +151,10 @@ class LocationParser
 
   def parse_row(row)
     return nil if row[0].nil?
-    potential_location_string = row[0]
+    parse_string(row[0])
+  end
+
+  def parse_string(potential_location_string)
     if @known_locations.any?{|known_location| potential_location_string == known_location}
       potential_location_string
     else
