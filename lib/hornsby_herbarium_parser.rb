@@ -13,6 +13,7 @@ class HornsbyHerbariumParser
     @location_parser = LocationParser.new #Trying a more encapsulated approach than ObserverList
     @hornsby_herbarium_entry_creator = HornsbyHerbariumEntryCreator.new
     @date = parse_date_from_filename(filename)
+    @date_parser = DateParser.new
     excel = Excel.new(filename)
     excel.default_sheet = excel.sheets.first #Assumption: only the first sheet is used in a spreadsheet
     @entries = []
@@ -27,6 +28,8 @@ class HornsbyHerbariumParser
       end
       location = @location_parser.parse_row(row)
       @location = location unless location.nil?
+      date = @date_parser.parse_row(row)
+      @date = date unless date.nil?
     end
   end
 
@@ -63,7 +66,7 @@ class HornsbyHerbariumParser
       result = nil
     end
     return result if result.nil?
-    raise "Date is too early" if result.year < 1990
+    raise "Date is too early" if result.year < 1990 #Todo: move this where it can be used regardless of where the date was generated
     raise "Date is in the future" if result > Date.today
     result
   end
@@ -153,4 +156,20 @@ class LocationParser
       nil
     end
   end
+end
+
+class DateParser
+
+  def parse_row(row)
+    return nil if row[0].nil?
+    day_s, month_s, year_s = row[0].split("-")
+    return nil if [day_s, month_s, year_s].any?{|s| s.nil?}
+    result = nil
+    begin
+      result = Date.parse([year_s, month_s, day_s].join("-"), true)
+    rescue
+    end
+    result
+  end
+
 end

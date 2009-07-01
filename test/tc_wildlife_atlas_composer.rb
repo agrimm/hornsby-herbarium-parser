@@ -9,7 +9,7 @@ module TestWildlifeAtlasHelper
   DEFAULT_INITIAL_SPREADSHEET_FILENAME = "test/example_spreadsheets/emptyScientificLicenceDatasheet.xls"
   EMPTY_CSV_OUTPUT_FILENAME = "test/example_spreadsheets/emptyScientificLicenceDatasheet.csv"
   SINGLE_ENTRY_OUTPUT_FILENAME = "test/example_spreadsheets/SimpleWildlifeAtlasOutput.csv"
-  SIMPLE_EXAMPLE_SPREADSHEET_FILENAME = "test/example_spreadsheets/Simple example 21062009.xls"
+  SIMPLE_EXAMPLE_SPREADSHEET_FILENAME = "test/example_spreadsheets/Simple example 1.xls"
 
   def assert_wildlife_atlas_output_equals(expected_csv_output_filename, entry_values, observers, sighting_date_string, location, initial_spreadsheet_filename, failure_message)
     entries = entry_values.map{|e| HornsbyHerbariumEntry.new(e[:genus], e[:species], e[:relative_sequential_number])}
