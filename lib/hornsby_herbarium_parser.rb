@@ -169,8 +169,16 @@ end
 class DateParser
 
   def parse_row(row)
-    return nil if row[0].nil?
-    day_s, month_s, year_s = row[0].split("-")
+    row.each do |cell|
+      next if cell.nil?
+      result = parse_string(cell)
+      return result unless result.nil?
+    end
+    nil
+  end
+
+  def parse_string(string)
+    day_s, month_s, year_s = string.split("-")
     return nil if [day_s, month_s, year_s].any?{|s| s.nil?}
     result = nil
     begin
