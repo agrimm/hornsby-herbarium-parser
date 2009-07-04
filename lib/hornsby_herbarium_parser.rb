@@ -9,8 +9,8 @@ class HornsbyHerbariumParser
   end
 
   def initialize(filename)
-    @observers_list = ObserverList.new #A list of known observers, as opposed to those in this spreadsheet
-    @location_parser = LocationParser.new #Trying a more encapsulated approach than ObserverList
+    @observer_parser = ObserverParser.new
+    @location_parser = LocationParser.new
     @hornsby_herbarium_entry_creator = HornsbyHerbariumEntryCreator.new
     basename = File.basename(filename, ".*")
     @location = @location_parser.parse_string(basename)
@@ -22,29 +22,21 @@ class HornsbyHerbariumParser
     0.upto(excel.last_row) do |line_number|
       row = excel.row(line_number)
       next if row.nil?
+
       entry = @hornsby_herbarium_entry_creator.create_if_valid(row)
       @entries << entry unless entry.nil?
       next unless entry.nil?
-      if row_has_observers?(row)
-        @observers = parse_observer_row(row)
-      end
+
+      observers = @observer_parser.parse_row(row)
+      @observers = observers unless observers.nil?
+      next unless observers.nil?
+
       location = @location_parser.parse_row(row)
       @location = location unless location.nil?
+
       date = @date_parser.parse_row(row)
       @date = date unless date.nil?
     end
-  end
-
-  #Parsing observers is very basic right now, because I'm not sure
-  #how observers are listed
-  def row_has_observers?(row)
-    string_containing_rows = row.find_all{|cell| not cell.nil?}
-    joined_string = string_containing_rows.join(" ")
-    return @observers_list.has_match_for?(joined_string)
-  end
-
-  def parse_observer_row(row)
-    row.join(" ")
   end
 
   def entry_count
@@ -82,7 +74,7 @@ class HornsbyHerbariumParser
   end
 
   def to_spreadsheet
-    HornsbyHerbariumSpreadsheet.new_using_values(@entries, @observers, sighting_date_string, @location)
+    HornsbyHerbariumSpreadsheet.new_using_values(@entries, @observers.first, sighting_date_string, @location)
   end
 end
 
@@ -134,13 +126,23 @@ class HornsbyHerbariumEntry
 
 end
 
-class ObserverList
+class ObserverParser
   def initialize
-    @observers = File.read("config/observers.txt").split("\n")
+    @known_observers = File.read("config/observers.txt").split("\n")
   end
 
   def has_match_for?(string)
-    @observers.any?{|observer| string.include?(observer)}
+    @known_observers.any?{|observer| string.include?(observer)}
+  end
+
+  def parse_row(row)
+    result = []
+    row.each do |cell|
+      next if cell.nil?
+      result << cell if has_match_for?(cell)
+    end
+    return nil if result.empty?
+    result
   end
 
 end
