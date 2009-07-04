@@ -1,0 +1,1133 @@
+FERNS AND FERN ALLIES		
+Adiantaceae	Adiantum	aethiopicum
+Adiantaceae	Adiantum	formosum
+Adiantaceae	Adiantum	hispidulum
+Adiantaceae	Cheilanthes	austrotenuifolia
+Adiantaceae	Cheilanthes	distans
+Adiantaceae	Cheilanthes	sieberi subsp. sieberi
+Adiantaceae	Pellaea	falcata
+Adiantaceae	Pellaea	viridis
+Aspleniaceae	Asplenium	australasicum
+Aspleniaceae	Asplenium	flabellifolium
+Aspleniaceae	Pleurosorus	rutifolius
+Athyriaceae	Deparia	petersenii subsp. congrua
+Athyriaceae	Diplazium	australe
+Azollaceae	Azolla	pinnata
+Blechnaceae	Blechnum	ambiguum
+Blechnaceae	Blechnum	camfieldii
+Blechnaceae	Blechnum	cartilagineum
+Blechnaceae	Blechnum	indicum
+Blechnaceae	Blechnum	minus
+Blechnaceae	Blechnum	nudum
+Blechnaceae	Blechnum	wattsii
+Blechnaceae	Doodia	aspera
+Blechnaceae	Doodia	australis
+Blechnaceae	Doodia	caudata
+Blechnaceae	Doodia	linearis
+Cyatheaceae	Cyathea	australis
+Davalliaceae	Davallia	solida var. pyxidata
+Dennstaedtiaceae	Histiopteris	incisa
+Dennstaedtiaceae	Hypolepis	glandulifera
+Dennstaedtiaceae	Hypolepis	muelleri
+Dennstaedtiaceae	Hypolepis	rugosula
+Dennstaedtiaceae	Pteridium	esculentum
+Dicksoniaceae	Calochlaena	dubia
+Dryopteridaceae	Lastreopsis	decomposita
+Dryopteridaceae	Lastreopsis	microsora
+Dryopteridaceae	Polystichum	australiense
+Gleicheniaceae	Dicranopteris	linearis var. linearis
+Gleicheniaceae	Gleichenia	dicarpa
+Gleicheniaceae	Gleichenia	microphylla
+Gleicheniaceae	Gleichenia	rupestris
+Gleicheniaceae	Sticherus	flabellatus
+Grammitidaceae	Grammitis	stenophylla
+Hymenophyllaceae	Hymenophyllum	cupressiforme
+Lindsaeaceae	Lindsaea	linearis
+Lindsaeaceae	Lindsaea	microphylla
+Lycopodiaceae	Lycopodiella	cernua
+Lycopodiaceae	Lycopodiella	lateralis
+Lycopodiaceae	Lycopodium	deuterodensum
+Oleandraceae	Nephrolepis	cordifolia
+Ophioglossaceae	Ophioglossum	lusitanicum
+Osmundaceae	Todea	barbara
+Polypodiaceae	Dictymia	brownii
+Polypodiaceae	Platycerium	bifurcatum
+Polypodiaceae	Pyrrosia	rupestris
+Psilotaceae	Psilotum	nudum
+Psilotaceae	Tmesipteris	truncata
+Pteridaceae	Pteris	ensiformis
+Pteridaceae	Pteris	tremula
+Pteridaceae	Pteris	umbrosa
+Pteridaceae	Pteris	vittata
+Schizaeaceae	Schizaea	bifida
+Schizaeaceae	Schizaea	dichotoma
+Schizaeaceae	Schizaea	rupestris
+Selaginellaceae	Selaginella	kraussiana
+Selaginellaceae	Selaginella	uliginosa
+Thelypteridaceae	Christella	dentata
+		
+ANGOISPERMS MONOCOTS		
+Agavaceae	Cordyline	stricta
+Alliaceae	Nothoscordum	borbonicum
+Anthericaceae	Alania	endlicheri
+Anthericaceae	Arthropodium	milleflorum
+Anthericaceae	Caesia	parviflora subsp. parviflora
+Anthericaceae	Caesia	parviflora subsp. vittata
+Anthericaceae	Chlorophytum	comosum
+Anthericaceae	Laxmannia	compacta
+Anthericaceae	Laxmannia	gracilis
+Anthericaceae	Thysanotus	juncifolius?
+Anthericaceae	Thysanotus	tuberosus
+Araceae	Alocasia	brisbanensis
+Araceae	Gymnostachys	anceps
+Arecaceae	Livistona	australis
+Asparagaceae	Myrsiphyllum	asparagoides
+Asparagaceae	Myrsiphyllum	scandens
+Asparagaceae	Protasparagus	aethiopicus
+Asparagaceae	Protasparagus	africanus
+Asparagaceae	Protasparagus	plumosus
+Blandfordiaceae	Blandfordia	grandiflora
+Blandfordiaceae	Blandfordia	nobilis
+Centrolepidaceae	Centrolepis	fascicularis
+Centrolepidaceae	Centrolepis	strigosa
+Colchicaceae	Burchardia	umbellata
+Commelinaceae	Commelina	cyanea
+Cyperaceae	Baumea	acuta
+Cyperaceae	Baumea	articulata
+Cyperaceae	Baumea	juncea
+Cyperaceae	Baumea	nuda
+Cyperaceae	Baumea	rubiginosa
+Cyperaceae	Bolboschoenus	caldwellii
+Cyperaceae	Carex	appressa
+Cyperaceae	Carex	breviculmis
+Cyperaceae	Carex	fascicularis
+Cyperaceae	Carex	inversa
+Cyperaceae	Caustis	flexuosa
+Cyperaceae	Caustis	pentandra
+Cyperaceae	Caustis	recurvata
+Cyperaceae	Chorizandra	cymbaria
+Cyperaceae	Cyathochaeta	diandra
+Cyperaceae	Cyperus	albostriatus
+Cyperaceae	Cyperus	brevifolius
+Cyperaceae	Cyperus	difformis
+Cyperaceae	Cyperus	eragrostis
+Cyperaceae	Cyperus	exaltatus
+Cyperaceae	Cyperus	gracilis
+Cyperaceae	Cyperus	imbecillis
+Cyperaceae	Cyperus	laevis
+Cyperaceae	Cyperus	lucidus
+Cyperaceae	Cyperus	mirus
+Cyperaceae	Cyperus	polystachyos
+Cyperaceae	Cyperus	reflexus
+Cyperaceae	Cyperus	rigens
+Cyperaceae	Cyperus	rotundus
+Cyperaceae	Cyperus	sanguinolentis
+Cyperaceae	Cyperus	sesquiflorus
+Cyperaceae	Cyperus	vorsteri
+Cyperaceae	Eleocharis	sphacelata
+Cyperaceae	Fimbristylis	dichotoma
+Cyperaceae	Fimbristylis	velata
+Cyperaceae	Gahnia	aspera
+Cyperaceae	Gahnia	clarkei
+Cyperaceae	Gahnia	erythrocarpa
+Cyperaceae	Gahnia	melanocarpa
+Cyperaceae	Gahnia	microstachya
+Cyperaceae	Gahnia	radula
+Cyperaceae	Gahnia	sieberiana
+Cyperaceae	Isolepis	cernua
+Cyperaceae	Isolepis	inundata
+Cyperaceae	Isolepis	nodosa
+Cyperaceae	Isolepis	prolifera
+Cyperaceae	Lepidosperma	concavum
+Cyperaceae	Lepidosperma	filiforme
+Cyperaceae	Lepidosperma	gunnii
+Cyperaceae	Lepidosperma	elatius
+Cyperaceae	Lepidosperma	laterale
+Cyperaceae	Lepidosperma	longitudinale
+Cyperaceae	Lepidosperma	neesii
+Cyperaceae	Lepidosperma	viscidum
+Cyperaceae	Ptilothrix	deusta
+Cyperaceae	Schoenoplectus	mucronatus
+Cyperaceae	Schoenoplectus	validus
+Cyperaceae	Schoenus	apogon
+Cyperaceae	Schoenus	brevifolius
+Cyperaceae	Schoenus	ericetorum
+Cyperaceae	Schoenus	imberbis
+Cyperaceae	Schoenus	lepidosperma subsp. pachylepis
+Cyperaceae	Schoenus	melanostachys
+Cyperaceae	Schoenus	moorei
+Cyperaceae	Schoenus	paludosus
+Cyperaceae	Schoenus	turbinatus
+Cyperaceae	Schoenus	villosus
+Cyperaceae	Tetraria	capillaris
+Cyperaceae	Tricostularia	pauciflora
+Dioscoreaceae	Dioscorea	transversa
+Doryanthaceae	Doryanthes	excelsa
+Geitonoplesiaceae	Geitonoplesium	cymosum
+Haemodoraceae	Haemodorum	corymbosum
+Haemodoraceae	Haemodorum	planifolium
+Hydrocharitaceae	Egeria	densa
+Hypoxidaceae	Hypoxis	hygrometrica
+Iridaceae	Crocosma	x crocosmiflora
+Iridaceae	Freesia	hybrid
+Iridaceae	Patersonia	glabrata
+Iridaceae	Patersonia	longifolia
+Iridaceae	Patersonia	sericea
+Iridaceae	Sisyrinchium	species A
+Juncaceae	Juncus	articulatus
+Juncaceae	Juncus	bufonius
+Juncaceae	Juncus	capillaceus
+Juncaceae	Juncus	cognatus
+Juncaceae	Juncus	continuus
+Juncaceae	Juncus	homalocaulis
+Juncaceae	Juncus	kraussii
+Juncaceae	Juncus	microcephalus
+Juncaceae	Juncus	planifolius
+Juncaceae	Juncus	prismatocarpus
+Juncaceae	Juncus	usitatus
+Juncaginaceae	Triglochin	striatum
+Lemnaceae	Spirodela	punctata
+Liliaceae	Lilium	formosanum
+Lomandraceae	Lomandra	brevis
+Lomandraceae	Lomandra	confertifolia subsp. pallida
+Lomandraceae	Lomandra	confertifolia subsp. rubiginosa
+Lomandraceae	Lomandra	cylindrica
+Lomandraceae	Lomandra	filiformis subsp. filiformis
+Lomandraceae	Lomandra	filiformis subsp. coriacea
+Lomandraceae	Lomandra	fluviatilis
+Lomandraceae	Lomandra	glauca
+Lomandraceae	Lomandra	gracilis
+Lomandraceae	Lomandra	longifolia
+Lomandraceae	Lomandra	micrantha
+Lomandraceae	Lomandra	multiflora subsp multiflora
+Lomandraceae	Lomandra	obliqua
+Lomandraceae	Lomandra	sp.
+Orchidaceae	Acianthus	exsertus
+Orchidaceae	Acianthus	fornicatus
+Orchidaceae	Bulbophyllum	shepherdii
+Orchidaceae	Caladenia	alata
+Orchidaceae	Caladenia	caerulea
+Orchidaceae	Caladenia	carnea 
+Orchidaceae	Caladenia	catenata
+Orchidaceae	Caladenia	testacea
+Orchidaceae	Calanthe	triplicata
+Orchidaceae	Caleana	major
+Orchidaceae	Calochilus	campestris
+Orchidaceae	Calochilus	paludosus
+Orchidaceae	Calochilus	robertsonii
+Orchidaceae	Chiloglottis	diphylla
+Orchidaceae	Chiloglottis	reflexa
+Orchidaceae	Chiloglottis	seminuda
+Orchidaceae	Corunastylis	fimbriatum
+Orchidaceae	Corunastylis	woollsii
+Orchidaceae	Corybas	aconitiflorus
+Orchidaceae	Corybas	fimbriatus
+Orchidaceae	Corybas	pruinosus
+Orchidaceae	Cryptostylis	erecta
+Orchidaceae	Cryptostylis	leptochila
+Orchidaceae	Cryptostylis	subulata
+Orchidaceae	Cymbidium	suave
+Orchidaceae	Dockrillia	teretifolia
+Orchidaceae	Dockrillia	lingueformis
+Orchidaceae	Dipodium	roseum
+Orchidaceae	Dipodium	punctatum
+Orchidaceae	Dipodium	variegatum
+Orchidaceae	Diuris	aurea
+Orchidaceae	Eriochilus	petricola
+Orchidaceae	Genoplesium	baueri
+Orchidaceae	Glossodia	major
+Orchidaceae	Glossodia	minor
+Orchidaceae	Liparis	reflexa
+Orchidaceae	Lyperanthus	suaveolens
+Orchidaceae	Microtis	parviflora
+Orchidaceae	Microtis	unifolia
+Orchidaceae	Nemacianthus	caudatus
+Orchidaceae	Orthoceras	strictum
+Orchidaceae	Plectorrhiza	tridentata
+Orchidaceae	Prasophyllum	elatum
+Orchidaceae	Prasophyllum	fimbriata
+Orchidaceae	Prasophyllum	patens
+Orchidaceae	Pterostylis	acuminata
+Orchidaceae	Pterostylis	baptistii
+Orchidaceae	Pterostylis	concinna
+Orchidaceae	Pterostylis	curta
+Orchidaceae	Pterostylis	daintreana
+Orchidaceae	Pterostylis	grandiflora
+Orchidaceae	Pterostylis	longifolia
+Orchidaceae	Pterostylis	nutans
+Orchidaceae	Pterostylis	pedunculata
+Orchidaceae	Rimacola	elliptica
+Orchidaceae	Sarcochilus	australis
+Orchidaceae	Thelychiton	gracilicaulis
+Orchidaceae	Thelychiton	speciosus
+Orchidaceae	Thelymitra	carnea
+Orchidaceae	Thelymitra	ixioides
+Orchidaceae	Thelymitra	pauciflora
+Philesiaceae	Eustrephus	latifolius
+Phormiaceae	Dianella	caerulea ssp producta
+Phormiaceae	Dianella	caerulea ssp caerulea
+Phormiaceae	Dianella	longifolia var. longifolia
+Phormiaceae	Dianella	longifolia var.stenophylla
+Phormiaceae	Dianella	prunina
+Phormiaceae	Dianella	revoluta var. revoluta
+Phormiaceae	Stypandra	glauca
+Phormiaceae	Tricoryne	elatior
+Phormiaceae	Tricoryne	simplex
+Phylidraceae	Phylidrum	lanuginosum
+Poaceae	Lachnagrostis	filiformis
+Poaceae	Agrostis	capillaris
+Poaceae	Aira	cupaniana
+Poaceae	Ancistrachne	maidenii
+Poaceae	Anisopogon	avenaceus
+Poaceae	Aristida	benthamii var. spinulifera
+Poaceae	Aristida	jerichoensis var. jerichoensis
+Poaceae	Aristida	personata
+Poaceae	Aristida	ramosa
+Poaceae	Aristida	vagans
+Poaceae	Aristida	warburgii
+Poaceae	Austrodanthonia	fulva
+Poaceae	Austrodanthonia	pilosa
+Poaceae	Austrodanthonia	tenuior
+Poaceae	Austrostipa	densiflora
+Poaceae	Austrostipa	nodosa
+Poaceae	Austrostipa	pubescens
+Poaceae	Austrostipa	ramosissima
+Poaceae	Austrostipa	rudis subsp. nervosa
+Poaceae	Austrostipa	verticillata
+Poaceae	Avena	sativa
+Poaceae	Axonopus	affinis
+Poaceae	Bothriochloa	macra
+Poaceae	Briza	maxima
+Poaceae	Briza	minor
+Poaceae	Briza	subaristata
+Poaceae	Bromus	cartharticus
+Poaceae	Bromus	diandrus
+Poaceae	Bromus	hordeaceus
+Poaceae	Bromus	molliformis
+Poaceae	Chloris	gayana
+Poaceae	Cleistochloa	rigida
+Poaceae	Cymbopogon	refractus
+Poaceae	Dactylis	glomerata
+Poaceae	Danthonia	linkii var. linkii
+Poaceae	Danthonia	racemosa
+Poaceae	Deyeuxia	quadriseta
+Poaceae	Dichelachne	crinata
+Poaceae	Dichelachne	micrantha
+Poaceae	Dichelachne	parva
+Poaceae	Dichelachne	rara
+Poaceae	Digitaria	didactyla
+Poaceae	Digitaria	diffusa
+Poaceae	Digitaria	ischaemum
+Poaceae	Digitaria	parviflora
+Poaceae	Digitaria	ramularis
+Poaceae	Digitaria	sanguinalis
+Poaceae	Echinochloa	colona
+Poaceae	Echinochloa	crus-galli
+Poaceae	Echinochloa	esculenta
+Poaceae	Echinopogon	caespitosus
+Poaceae	Echinopogon	ovatus
+Poaceae	Ehrharta	erecta
+Poaceae	Ehrharta	longiflora
+Poaceae	Eleusine	indica
+Poaceae	Eleusine	tristachya
+Poaceae	Enneapogon	avenaceus
+Poaceae	Entolasia	marginata
+Poaceae	Entolasia	stricta
+Poaceae	Entolasia	whiteana
+Poaceae	Eragrostis	benthamii
+Poaceae	Eragrostis	brownii
+Poaceae	Eragrostis	curvula
+Poaceae	Eragrostis	leptostachya
+Poaceae	Eragrostis	parviflora
+Poaceae	Eragrostis	tenuifolia
+Poaceae	Eragrostis	trachycarpa
+Poaceae	Festuca	elatior
+Poaceae	Festuca	pratensis
+Poaceae	Hainardia	cylindrica
+Poaceae	Hemarthria	uncinata
+Poaceae	Holcus	lanatus
+Poaceae	Hyparrhenia	hirta
+Poaceae	Imperata	cylindrica 
+Poaceae	Joycea	pallida
+Poaceae	Lolium	perenne
+Poaceae	Melinis	repens
+Poaceae	Microlaena	stipoides var. stipoides
+Poaceae	Oplismenus	aemulus
+Poaceae	Oplismenus	hirtellus subsp imbecillis
+Poaceae	Panicum	maximum var. trichoglume
+Poaceae	Panicum	simile
+Poaceae	Paspalum	dilatatum
+Poaceae	Paspalum	quadrifarium
+Poaceae	Paspalum	urvillei
+Poaceae	Paspalum	wettsteinii
+Poaceae	Pennisetum	macrourum
+Poaceae	Phalaris	aquatica
+Poaceae	Phalaris	paradoxa
+Poaceae	Phragmites	australis
+Poaceae	Poa	affinis
+Poaceae	Poa	annua
+Poaceae	Polypogon	littoralis
+Poaceae	Polypogon	monspeliensis
+Poaceae	Sacciolepis	indica
+Poaceae	Setaria	distans
+Poaceae	Setaria	gracilis
+Poaceae	Setaria	palmifolia
+Poaceae	Setaria	pumila
+Poaceae	Setaria	sphacelata
+Poaceae	Sporobolus	elongatus
+Poaceae	Sporobolus	indicus var. capensis
+Poaceae	Sporobolus	indicus var. major
+Poaceae	Sporobolus	sphacelata
+Poaceae	Sporobolus	virginicus var. minor
+Poaceae	Sporobolus	virginicus
+Poaceae	Tetrarrhena	juncea
+Poaceae	Themeda	triandra
+Poaceae	Tripogon	loliiformis
+Poaceae	Vulpia	bromoides
+Potamogetonaceae	Potamogeton	tricarinatus
+Restionaceae	Chordifex	dimorpha
+Restionaceae	Chordifex	fastigiata
+Restionaceae	Empodisma	minus
+Restionaceae	Eurychorda	complanata
+Restionaceae	Hypolaena	fastigiatus
+Restionaceae	Leptocarpus	tenax
+Restionaceae	Lepyrodia	muelleri
+Restionaceae	Lepyrodia	scariosa
+Smilacaceae	Smilax	australis
+Smilacaceae	Smilax	glyciphylla
+Uvulariaceae	Schelhammera	undulata
+Xanthorrhoeaceae	Xanthorrhoea	arborea
+Xanthorrhoeaceae	Xanthorrhoea	media
+Xanthorrhoeaceae	Xanthorrhoea	minor
+Xanthorrhoeaceae	Xanthorrhoea	resinosa
+Xyridaceae	Xyris	gracilis subsp. gracilis
+Xyridaceae	Xyris	gracilis subsp. laxa
+Xyridaceae	Xyris	juncea
+		
+ANGIOSPERMS DICOTS		
+Acanthaceae	Brunoniella	australis
+Acanthaceae	Brunoniella	pumilio
+Acanthaceae	Pseuderanthemum	variabile
+Acanthaceae	Thunbergia 	alata
+Aceraceae	Acer	negundo
+Aizoaceae	Tetragonia	tetragonioides
+Amaranthaceae	Alternanthera	denticulata
+Amaranthaceae	Alternanthera	philoxeroides
+Amaranthaceae	Alternanthera	pungens
+Amaranthaceae	Amarathus	deflexus
+Amaranthaceae	Gomphrena	celosioides
+Amygdalaceae	Prunus	serratifolia
+Anacardiaceae	Toxicodendron	succedaneum
+Apiaceae	Actinotus	helianthi
+Apiaceae	Actinotus	minor
+Apiaceae	Apium	prostratum subsp. filiforme
+Apiaceae	Centella	asiatica
+Apiaceae	Ciclospermum	leptophyllum
+Apiaceae	Daucus	carota
+Apiaceae	Foeniculum	vulgare
+Apiaceae	Hydrocotyle	bonariensis
+Apiaceae	Hydrocotyle	geraniifolia
+Apiaceae	Hydrocotyle	peduncularis
+Apiaceae	Hydrocotyle	tripartita
+Apiaceae	Platysace	clelandii
+Apiaceae	Platysace	ericoides
+Apiaceae	Platysace	lanceolata
+Apiaceae	Platysace	linearifolia
+Apiaceae	Xanthosia 	pilosa
+Apiaceae	Xanthosia 	tridentata
+Apocynaceae	Mandevillea	laxa
+Apocynaceae	Parsonsia	straminea
+Araliaceae	Astrotricha	floccosa
+Araliaceae	Astrotricha	latifolia
+Araliaceae	Astrotricha	longifolia
+Araliaceae	Hedera	helix
+Araliaceae	Polyscias	sambucifolia
+Asclepiadaceae	Araujia	sericiflora
+Asclepiadaceae	Gomphocarpus	fruticosus
+Asclepiadaceae	Marsdenia	rostrata
+Asclepiadaceae	Marsdenia	suaveolens
+Asclepiadaceae	Tylophora	barbata
+Asteraceae	Ageratina	adenophora
+Asteraceae	Ageratina	riparia
+Asteraceae	Arctotheca	calendula
+Asteraceae	Bidens	pilosa
+Asteraceae	Brachyscome	angustifolia var. angustifolia
+Asteraceae	Brachyscome	angustifolia var. heterophylla
+Asteraceae	Cassinia	aculeata
+Asteraceae	Cassinia	aureonitens
+Asteraceae	Cassinia	compacta
+Asteraceae	Cassinia	cunninghamii
+Asteraceae	Cassinia	denticulata
+Asteraceae	Cassinia	longifolia
+Asteraceae	Cassinia	uncata
+Asteraceae	Centipeda	minima
+Asteraceae	Chrysanthemoides	monilifera ssp. monilifera
+Asteraceae	Cirsium	vulgare
+Asteraceae	Conyza	albida
+Asteraceae	Conyza	bonariensis
+Asteraceae	Conyza	canadensis
+Asteraceae	Conyza	sp.
+Asteraceae	Cotula	australis
+Asteraceae	Cotula	coronopifolia
+Asteraceae	Crassocephalum	crepidioides
+Asteraceae	Delairea	odorata
+Asteraceae	Epaltes	australis
+Asteraceae	Erechtites	valerianifolia
+Asteraceae	Erigeron	karvinskianus
+Asteraceae	Euchiton	gymnocephalus
+Asteraceae	Euchiton	involucratus
+Asteraceae	Euchiton	sphaericus
+Asteraceae	Facelis	retusa
+Asteraceae	Galinsoga	parviflora
+Asteraceae	Gnaphalium	americanum
+Asteraceae	Gnaphalium	calviceps
+Asteraceae	Gnaphalium	coarctatum
+Asteraceae	Helichrysum	elatum
+Asteraceae	Helichrysum	rutidolepis
+Asteraceae	Helichrysum	scorpioides
+Asteraceae	Hypochaeris	microcephala var. albiflora
+Asteraceae	Hypochaeris	radicata
+Asteraceae	Lactuca	serriola
+Asteraceae	Lagenifera	gracilis
+Asteraceae	Leptinella	longipes
+Asteraceae	Olearia	cordata
+Asteraceae	Olearia	microphylla
+Asteraceae	Olearia	tomentosa
+Asteraceae	Olearia	viscidula
+Asteraceae	Ozothamnus	diosmifolius
+Asteraceae	Pseudognaphalium	luteoalbum
+Asteraceae	Roldana	petasitis
+Asteraceae	Senecio	bipinnatisectus
+Asteraceae	Senecio	biserratus
+Asteraceae	Senecio	diaschides
+Asteraceae	Senecio	hispidulus var. hispidulus
+Asteraceae	Senecio	hispidulus var. dissectus
+Asteraceae	Senecio	linearifolius
+Asteraceae	Senecio	madagascarensis
+Asteraceae	Senecio	minimus
+Asteraceae	Senecio	quadridentatus
+Asteraceae	Senecio	species E
+Asteraceae	Senecio	vagus subsp. eglandulosa
+Asteraceae	Senecio	vellioides
+Asteraceae	Senecio	vulgaris
+Asteraceae	Sigesbeckia	orientalis subsp. orientalis
+Asteraceae	Solenogyne	bellioides
+Asteraceae	Soliva	sessilis
+Asteraceae	Sonchus	aspera
+Asteraceae	Sonchus	oleraceus
+Asteraceae	Tagetes	minuta
+Asteraceae	Tanacetum	vulgare
+Asteraceae	Taraxacum	officinale
+Asteraceae	Vernonia	cinerea var. cinerea
+Asteraceae	Vittadinia	hispidula var. hispidula
+Asteraceae	Vittadinia	tenuissima
+Avicenniaceae	Avicennia	marina var. australasica
+Basellaceae	Anredera	cordifolia
+Bignoniaceae	Jacaranda	mimosifolia
+Bignoniaceae	Pandorea	pandorana
+Bignoniaceae	Pithecocteneum	cyanchoides
+Boraginaceae	Echium	plantagineum
+Brassicaceae	Brassica	fruticulosa
+Brassicaceae	Brassica	oleracea
+Brassicaceae	Capsella	bursa-pastoris
+Brassicaceae	Cardamine	hirsuta
+Brassicaceae	Coronopus	didymus
+Brassicaceae	Lepidium	bonariense
+Brassicaceae	Rorippa	microphylla
+Brassicaceae	Rorippa	nasturtium-aquaticum
+Brassicaceae	Sisymbrium	officinale
+Caesalpiniaceae	Senna	pendula
+Caesalpiniaceae	Senna	x floribunda
+Callitrichaceae	Callitriche	stagnalis
+Campanulaceae	Isotoma	fluviatilis
+Campanulaceae	Lobelia	alata
+Campanulaceae	Lobelia	dentata
+Campanulaceae	Lobelia	gibbosa
+Campanulaceae	Lobelia	gracilis
+Campanulaceae	Pratia	purpurascens
+Campanulaceae	Wahlenbergia	communis
+Campanulaceae	Wahlenbergia	gracilis
+Campanulaceae	Wahlenbergia	litticola
+Campanulaceae	Wahlenbergia	stricta
+Caprifoliaceae	Lonicera	japonica
+Caprifoliaceae	Sambucus	gaudichaudiana
+Caryophyllaceae	Cerastium	glomeratum
+Caryophyllaceae	Cerastium	vulgare
+Caryophyllaceae	Polycarpon	tetraphyllum
+Caryophyllaceae	Silene	gallica var. gallica
+Caryophyllaceae	Spergularia	marina
+Caryophyllaceae	Stellaria	flaccida
+Caryophyllaceae	Stellaria	media
+Casuarinaceae	Allocasuarina	distyla
+Casuarinaceae	Allocasuarina	littoralis
+Casuarinaceae	Allocasuarina	torulosa
+Casuarinaceae	Casuarina	glauca
+Celastraceae	Maytenus	silvestris
+Chenopodiaceae	Atriplex	semibaccata
+Chenopodiaceae	Chenopodium	album
+Chenopodiaceae	Chenopodium	ambrosioides
+Chenopodiaceae	Chenopodium	glaucum
+Chenopodiaceae	Chenopodium	murale
+Chenopodiaceae	Einadia	hastata
+Chenopodiaceae	Einadia	nutans subsp. nutans
+Chenopodiaceae	Einadia	trigonos subsp. leiocarpa
+Chenopodiaceae	Einadia	trigonos subsp. stellulata
+Chenopodiaceae	Einadia	trigonos subsp. trigonos
+Chenopodiaceae	Sarcocornia	quinqueflora
+Chenopodiaceae	Suaeda	australis
+Clusiaceae	Hypericum	gramineum
+Clusiaceae	Hypericum	perforatum var. angustifolium
+Convolvulaceae	Calystegia	marginata
+Convolvulaceae	Convolvulus	erubescens
+Convolvulaceae	Dichondra	repens
+Convolvulaceae	Ipomaea	indica
+Convolvulaceae	Polymeria	calycina
+Crassulaceae	Crassula	sieberiana
+Cunoniaceae	Bauera	rubioides
+Cunoniaceae	Callicoma	serratifolia
+Cunoniaceae	Ceratopetalum	apetalum
+Cunoniaceae	Ceratopetalum	gummiferum
+Cunoniaceae	Schizomeria	ovata
+Dilleniaceae	Hibbertia	aspera
+Dilleniaceae	Hibbertia	bracteata
+Dilleniaceae	Hibbertia	cistiflora
+Dilleniaceae	Hibbertia	dentata
+Dilleniaceae	Hibbertia	diffusa
+Dilleniaceae	Hibbertia	empetrifolia
+Dilleniaceae	Hibbertia	fasciculata
+Dilleniaceae	Hibbertia	linearis
+Dilleniaceae	Hibbertia	riparia
+Dilleniaceae	Hibbertia	scandens
+Droseraceae	Drosera	auriculata
+Droseraceae	Drosera	binata
+Droseraceae	Drosera	peltata
+Droseraceae	Drosera	pygmaea
+Droseraceae	Drosera	spathulata
+Elaeocarpaceae	Elaeocarpus	reticulatus
+Epacridaceae	Acrotriche	divaricata
+Epacridaceae	Astroloma	humifusum
+Epacridaceae	Astroloma	pinifolium
+Epacridaceae	Brachyloma	daphnoides
+Epacridaceae	Dracophyllum	secundum
+Epacridaceae	Epacris	crassifolia
+Epacridaceae	Epacris	longiflora
+Epacridaceae	Epacris	microphylla
+Epacridaceae	Epacris	obtusifolia
+Epacridaceae	Epacris	pulchella
+Epacridaceae	Epacris	purpurascens var. purpurascens
+Epacridaceae	Leucopogon	amplexicaulis
+Epacridaceae	Leucopogon	appressa
+Epacridaceae	Leucopogon	ericoides
+Epacridaceae	Leucopogon	esquamatus
+Epacridaceae	Leucopogon	juniperinus
+Epacridaceae	Leucopogon	lanceolatus
+Epacridaceae	Leucopogon	microphyllus
+Epacridaceae	Leucopogon	muticus
+Epacridaceae	Leucopogon	setiger
+Epacridaceae	Leucopogon	virgatus
+Epacridaceae	Lissanthe	strigosa
+Epacridaceae	Melichrus	procumbens
+Epacridaceae	Monotoca	elliptica
+Epacridaceae	Monotoca	scoparia
+Epacridaceae	Sprengelia	incarnata
+Epacridaceae	Styphelia	longifolia
+Epacridaceae	Styphelia	triflora
+Epacridaceae	Styphelia	tubiflora
+Epacridaceae	Trochocarpa	laurina
+Epacridaceae	Woollsia	pungens
+Escalloniaceae	Abrophyllum	ornans
+Euphorbiaceae	Amperea	xiphoclada
+Euphorbiaceae	Breynia	oblongifolia
+Euphorbiaceae	Chamaesyce	dallachyana
+Euphorbiaceae	Chamaesyce	supina
+Euphorbiaceae	Euphorbia	peplus
+Euphorbiaceae	Glochidion	ferdinandi var. ferdinandi
+Euphorbiaceae	Glochidion	ferdinandi var. pubens
+Euphorbiaceae	Micrantheum	ericoides
+Euphorbiaceae	Monotaxis	linifolia
+Euphorbiaceae	Omalanthus	populifolius
+Euphorbiaceae	Phyllanthus	gunnii
+Euphorbiaceae	Phyllanthus	hirtellus
+Euphorbiaceae	Phyllanthus	tenellus
+Euphorbiaceae	Poranthera	corymbosa
+Euphorbiaceae	Poranthera	ericifolia
+Euphorbiaceae	Poranthera	microphylla
+Euphorbiaceae	Ricinocarpos	pinifolius
+Euphorbiaceae	Ricinus	communis
+Euphorbiaceae	Sapium	sebiferum
+Eupomatiaceae	Eupomatia	laurina
+Fabaceae	Aotus	ericoides
+Fabaceae	Bossiaea	ensata
+Fabaceae	Bossiaea	heterophylla
+Fabaceae	Bossiaea	lenticularis
+Fabaceae	Bossiaea	obcordata
+Fabaceae	Bossiaea	rhombifolia subsp. rhombifolia
+Fabaceae	Bossiaea	scolopendria
+Fabaceae	Bossiaea	stephensonii
+Fabaceae	Daviesia	corymbosa
+Fabaceae	Daviesia	ulicifolia
+Fabaceae	Desmodium	brachypodum
+Fabaceae	Desmodium	rhytidophyllum
+Fabaceae	Desmodium	varians
+Fabaceae	Dillwynia	acicularis
+Fabaceae	Dillwynia	elegans
+Fabaceae	Dillwynia	floribunda var. floribunda
+Fabaceae	Dillwynia	floribunda var. teretifolia
+Fabaceae	Dillwynia	parvifolia
+Fabaceae	Dillwynia	retorta
+Fabaceae	Dillwynia	sericea
+Fabaceae	Genista	linifolia
+Fabaceae	Genista	monspessulana
+Fabaceae	Glycine	clandestina
+Fabaceae	Glycine	tabacina
+Fabaceae	Gompholobium	glabratum
+Fabaceae	Gompholobium	grandiflorum
+Fabaceae	Gompholobium	latifolium
+Fabaceae	Gompholobium	pinnatum
+Fabaceae	Hardenbergia	violacea
+Fabaceae	Hovea	linearis
+Fabaceae	Hovea	longifolia
+Fabaceae	Hovea	purpurea
+Fabaceae	Indigofera	australis
+Fabaceae	Jacksonia	scoparia
+Fabaceae	Kennedia	rubicunda
+Fabaceae	Lotus	angustissimus
+Fabaceae	Lotus	suaveolens
+Fabaceae	Medicago	arabica
+Fabaceae	Medicago	lupulina
+Fabaceae	Medicago	polymorpha
+Fabaceae	Melilotus	indicus
+Fabaceae	Mirbelia	rubiifolia
+Fabaceae	Mirbelia	speciosa subsp. speciosa
+Fabaceae	Phyllota	grandiflora
+Fabaceae	Phyllota	phylicoides
+Fabaceae	Platylobium	formosum 
+Fabaceae	Podolobium	ilicifolium
+Fabaceae	Pultenaea	daphnoides
+Fabaceae	Pultenaea	elliptica
+Fabaceae	Pultenaea	ferruginea var. deanei
+Fabaceae	Pultenaea	flexilis
+Fabaceae	Pultenaea	hispidula
+Fabaceae	Pultenaea	linophylla
+Fabaceae	Pultenaea	polifolia
+Fabaceae	Pultenaea	retusa
+Fabaceae	Pultenaea	rosmarinifolia
+Fabaceae	Pultenaea	scabra
+Fabaceae	Pultenaea	stipularis
+Fabaceae	Pultenaea	villosa
+Fabaceae	Pultenaea	viscosa
+Fabaceae	Sphaerolobium	vimineum
+Fabaceae	Tephrosia	grandiflora
+Fabaceae	Trifolium	arvense
+Fabaceae	Trifolium	campestre
+Fabaceae	Trifolium	dubium
+Fabaceae	Trifolium	glomeratum
+Fabaceae	Trifolium	pratense
+Fabaceae	Trifolium	repens
+Fabaceae	Trifolium	scabrum
+Fabaceae	Trifolium	subterraneum
+Fabaceae	Vicia	hirsuta
+Fabaceae	Vicia	sativa subsp. sativa
+Fabaceae	Viminaria	juncea
+Fumariaceae	Fumaria	bastardii
+Fumariaceae	Fumaria	capreolata subsp. capreolata
+Fumariaceae	Fumaria	muralis subsp. muralis
+Gentianaceae	Centaurium	erythraea
+Gentianaceae	Centaurium	tenuiflorum
+Geraniaceae	Geranium	homeanum
+Geraniaceae	Pelargonium	australe
+Geraniaceae	Pelargonium	asperum
+Geraniaceae	Pelargonium	inodorum
+Goodeniaceae	Dampiera	purpurea
+Goodeniaceae	Dampiera	scottiana
+Goodeniaceae	Dampiera	stricta
+Goodeniaceae	Goodenia	bellidifolia subsp. bellidifolia
+Goodeniaceae	Goodenia	dimorpha var dimorpha
+Goodeniaceae	Goodenia	hederacea subsp. hederacea
+Goodeniaceae	Goodenia	heterophylla subsp. heterophylla
+Goodeniaceae	Goodenia	ovata
+Goodeniaceae	Goodenia	paniculata
+Goodeniaceae	Scaevola	albida
+Goodeniaceae	Scaevola	ramosissima
+Haloragaceae	Gonocarpus	micranthus subsp. micranthus
+Haloragaceae	Gonocarpus	tetragynus
+Haloragaceae	Gonocarpus	teucrioides
+Haloragaceae	Myriophyllum	aquaticum
+Lamiaceae	Chloanthes	stoechadis
+Lamiaceae	Hemigenia	purpurea
+Lamiaceae	Lamium	amplexicaule
+Lamiaceae	Lycopus	australis
+Lamiaceae	Mentha	satureioides
+Lamiaceae	Plectranthus	parviflorus
+Lamiaceae	Prostanthera	denticulata
+Lamiaceae	Prostanthera	howelliae
+Lamiaceae	Prostanthera	incisa
+Lamiaceae	Prostanthera	linearis
+Lamiaceae	Prostanthera	ovalifolia
+Lamiaceae	Prostanthera	rhombea
+Lamiaceae	Prostanthera	scutellarioides
+Lamiaceae	Prostanthera	violacea
+Lamiaceae	Prunella	vulgaris
+Lauraceae	Cassytha	glabella subsp. glabella
+Lauraceae	Cassytha	pubescens
+Lentibulariaceae	Utricularia	uliginosa
+Linaceae	Linum	marginale
+Linaceae	Linum	trigynum
+Loganiaceae	Logania	albiflora
+Loganiaceae	Logania	pusilla
+Loganiaceae	Mitrasacme	polymorpha
+Loranthaceae	Amyema	cambagei
+Loranthaceae	Amyema	miquelii
+Loranthaceae	Dendrophthoe	vitellina
+Loranthaceae	Muellerina	eucalyptoides
+Lythraceae	Lythrum	hyssopifolia
+Malacaeae	Cotoneaster	glaucophyllus
+Malacaeae	Pyracantha	sp.
+Malacaeae	Rhaphiolepis	indica
+Malvaceae	Modiola	caroliniana
+Malvaceae	Pavonia	hastata
+Malvaceae	Sida	rhombifolia
+Meliaceae	Melia	azedarach
+Meliaceae	Synoum	glandulosum
+Meliaceae	Toona	australis
+Menispermaceae	Sarcopetalum	harveyanum
+Menispermaceae	Stephania	japonica var. discolor
+Mimosaceae	Acacia	adunca
+Mimosaceae	Acacia	amoena
+Mimosaceae	Acacia	baileyana
+Mimosaceae	Acacia	binervia
+Mimosaceae	Acacia	brownii
+Mimosaceae	Acacia	buxifolia subsp. buxifolia
+Mimosaceae	Acacia	bynoeana
+Mimosaceae	Acacia	decurrens
+Mimosaceae	Acacia	echinula
+Mimosaceae	Acacia	elata
+Mimosaceae	Acacia	elongata var. elongata
+Mimosaceae	Acacia	falcata
+Mimosaceae	Acacia	filicifolia
+Mimosaceae	Acacia	floribunda
+Mimosaceae	Acacia	hispidula
+Mimosaceae	Acacia	implexa
+Mimosaceae	Acacia	irrorata
+Mimosaceae	Acacia	juncifolia 
+Mimosaceae	Acacia	linifolia
+Mimosaceae	Acacia	longifolia ssp longifolia
+Mimosaceae	Acacia	longissima
+Mimosaceae	Acacia	mearnsii
+Mimosaceae	Acacia	myrtifolia
+Mimosaceae	Acacia	obtusifolia
+Mimosaceae	Acacia	oxycedrus
+Mimosaceae	Acacia	parramattensis
+Mimosaceae	Acacia	parvipinnula
+Mimosaceae	Acacia	podalyriifolia
+Mimosaceae	Acacia	saligna
+Mimosaceae	Acacia	schinoides
+Mimosaceae	Acacia	stricta
+Mimosaceae	Acacia	suaveolens
+Mimosaceae	Acacia	terminalis
+Mimosaceae	Acacia	trinervata
+Mimosaceae	Acacia	ulicifolia
+Monimiaceae	Doryphora	sassafras
+Monimiaceae	Palmeria	scandens
+Monimiaceae	Wilkiea	huegeliana
+Moraceae	Ficus	coronata
+Moraceae	Ficus	rubiginosa
+Moraceae	Morus	alba
+Myoporaceae	Myoporum	acuminatum
+Myrsinaceae	Aegiceras	corniculatum
+Myrsinaceae	Myrsine	howittiana
+Myrsinaceae	Myrsine	variabilis
+Myrtaceae	Acmena	smithii
+Myrtaceae	Angophora	bakeri
+Myrtaceae	Angophora	costata
+Myrtaceae	Angophora	floribunda
+Myrtaceae	Angophora	hispida
+Myrtaceae	Angophora	subvelutina
+Myrtaceae	Austromyrtus	tenuifolia
+Myrtaceae	Babingtonia	densifolia
+Myrtaceae	Babingtonia	virgata var virgata
+Myrtaceae	Backhousia	myrtifolia
+Myrtaceae	Baeckea	brevifolia
+Myrtaceae	Baeckea	diosmifolia
+Myrtaceae	Baeckea	imbricata
+Myrtaceae	Baeckea	linifolia
+Myrtaceae	Baeckea	ramosissima subsp. ramosissima
+Myrtaceae	Callistemon	citrinus
+Myrtaceae	Callistemon	linearifolius
+Myrtaceae	Callistemon	linearis
+Myrtaceae	Callistemon	rigidus
+Myrtaceae	Calytrix	tetragona
+Myrtaceae	Corymbia	eximia
+Myrtaceae	Corymbia	gummifera
+Myrtaceae	Darwinia	biflora
+Myrtaceae	Darwinia	fascicularis subsp. fascicularis
+Myrtaceae	Darwinia	peduncularis
+Myrtaceae	Darwinia	procera 
+Myrtaceae	Eucalyptus	acmenoides
+Myrtaceae	Eucalyptus	agglomerata
+Myrtaceae	Eucalyptus	beyeriana
+Myrtaceae	Eucalyptus	camfieldii
+Myrtaceae	Eucalyptus	capitellata
+Myrtaceae	Eucalyptus	crebra
+Myrtaceae	Eucalyptus	haemastoma
+Myrtaceae	Eucalyptus	luehmanniana
+Myrtaceae	Eucalyptus	multicaulis
+Myrtaceae	Eucalyptus	paniculata subsp. paniculata
+Myrtaceae	Eucalyptus	pilularis
+Myrtaceae	Eucalyptus	piperita
+Myrtaceae	Eucalyptus	punctata
+Myrtaceae	Eucalyptus	racemosa
+Myrtaceae	Eucalyptus	resinifera subsp. resinifera
+Myrtaceae	Eucalyptus	saligna
+Myrtaceae	Eucalyptus	siderophloia
+Myrtaceae	Eucalyptus	sieberi
+Myrtaceae	Eucalyptus	sparsifolia
+Myrtaceae	Eucalyptus	squamosa
+Myrtaceae	Eucalyptus	tereticornis
+Myrtaceae	Eucalyptus	umbra
+Myrtaceae	Kunzea	ambigua
+Myrtaceae	Kunzea	capitata
+Myrtaceae	Kunzea	ericoides
+Myrtaceae	Kunzea	rupestris
+Myrtaceae	Leptospermum	arachnoides
+Myrtaceae	Leptospermum	deanei 
+Myrtaceae	Leptospermum	grandifolium
+Myrtaceae	Leptospermum	juniperinum
+Myrtaceae	Leptospermum	parvifolium
+Myrtaceae	Leptospermum	polygalifolium subsp. polygalifolium
+Myrtaceae	Leptospermum	squarrosum
+Myrtaceae	Leptospermum	trinervium
+Myrtaceae	Melaleuca	deanei
+Myrtaceae	Melaleuca	decora
+Myrtaceae	Melaleuca	ericifolia
+Myrtaceae	Melaleuca	quinquenervia
+Myrtaceae	Melaleuca	styphelioides
+Myrtaceae	Micromyrtus	blakelyi 
+Myrtaceae	Micromyrtus	ciliata
+Myrtaceae	Rhodamnia	rubescens
+Myrtaceae	Syncarpia	glomulifera
+Myrtaceae	Syzygium	paniculatum
+Myrtaceae	Tristania	neriifolia
+Myrtaceae	Tristaniopsis	collina
+Myrtaceae	Tristaniopsis	laurina
+Ochnaceae	Ochna	serrulata
+Olacaceae	Olax	stricta
+Oleaceae	Ligustrum	lucidum
+Oleaceae	Ligustrum	sinense
+Oleaceae	Notelaea	longifolia forma longifolia
+Onagraceae	Epilobium	billardierianum var. cinereum
+Onagraceae	Ludwigia	longifolia
+Onagraceae	Ludwigia	peploides subsp. montevidensis
+Onagraceae	Oenothera	mollissima
+Oxalidaceae	Oxalis	corniculata
+Oxalidaceae	Oxalis	debilis var. corymbosa
+Oxalidaceae	Oxalis	exilis
+Oxalidaceae	Oxalis	incarnata
+Oxalidaceae	Oxalis	latifolia
+Oxalidaceae	Oxalis	pes-caprae
+Oxalidaceae	Oxalis	radicosa
+Oxalidaceae	Oxalis	rubens
+Passifloraceae	Passiflora	cinnabarina
+Passifloraceae	Passiflora	edulis
+Passifloraceae	Passiflora	herbertiana subsp. herbertiana
+Phytolaccaceae	Phytolacca	octandra
+Pittosporaceae	Billardiera	scandens var. scandens
+Pittosporaceae	Bursaria	spinosa ssp. spinosa
+Pittosporaceae	Citriobatus	pauciflorus
+Pittosporaceae	Pittosporum	revolutum
+Pittosporaceae	Pittosporum	undulatum
+Pittosporaceae	Rhytidosporum	procumbens
+Plantaginaceae	Plantago	debilis
+Plantaginaceae	Plantago	lanceolata
+Plantaginaceae	Plantago	major
+Plantaginaceae	Plantago	varia
+Polygalaceae	Comesperma	ericinum
+Polygalaceae	Comesperma	sphaerocarpum
+Polygalaceae	Comesperma	volubile
+Polygalaceae	Polygala	virgata
+Polygonaceae	Acetosella	vulgaris
+Polygonaceae	Persicaria	capitata
+Polygonaceae	Persicaria	decipiens
+Polygonaceae	Persicaria	hydropiper
+Polygonaceae	Persicaria	lapathifolia
+Polygonaceae	Persicaria	praetermissa
+Polygonaceae	Polygonum	arenastrum
+Polygonaceae	Polygonum	patulum
+Polygonaceae	Rumex	brownii
+Polygonaceae	Rumex	conglomeratus
+Polygonaceae	Rumex	crispus
+Polygonaceae	Rumex	sagittatus
+Portulacaceae	Calandrinia	pickeringii
+Primulaceae	Anagallis	arvensis
+Primulaceae	Primula	sp.
+Primulaceae	Samolus	repens
+Proteaceae	Banksia	collina
+Proteaceae	Banksia	ericifolia ssp. ericifolia
+Proteaceae	Banksia	integrifolia var integrifolia
+Proteaceae	Banksia	marginata
+Proteaceae	Banksia	oblongifolia
+Proteaceae	Banksia	serrata
+Proteaceae	Banksia	spinulosa var. collina
+Proteaceae	Banksia	spinulosa 
+Proteaceae	Conospermum	ericifolium
+Proteaceae	Conospermum	longifolium subsp. longifolium
+Proteaceae	Conospermum	longifolium subsp. mediale
+Proteaceae	Conospermum	taxifolium
+Proteaceae	Grevillea	buxifolia subsp. buxifolia
+Proteaceae	Grevillea	linearifolia
+Proteaceae	Grevillea	mucronulata
+Proteaceae	Grevillea	parviflora subsp. supplicans
+Proteaceae	Grevillea	robusta
+Proteaceae	Grevillea	sericea subsp. sericea
+Proteaceae	Grevillea	speciosa
+Proteaceae	Hakea	bakeriana
+Proteaceae	Hakea	dactyloides
+Proteaceae	Hakea	gibbosa
+Proteaceae	Hakea	laevepes
+Proteaceae	Hakea	propinqua
+Proteaceae	Hakea	salicifolia
+Proteaceae	Hakea	sericea
+Proteaceae	Hakea	teretifolia
+Proteaceae	Isopogon	anemonifolius
+Proteaceae	Isopogon	anethifolius
+Proteaceae	Lambertia	formosa
+Proteaceae	Lomatia	myricoides
+Proteaceae	Lomatia	myricoides X silaifolia
+Proteaceae	Lomatia	silaifolia
+Proteaceae	Persoonia	lanceolata
+Proteaceae	Persoonia	laurina
+Proteaceae	Persoonia	levis
+Proteaceae	Persoonia	linearis
+Proteaceae	Persoonia	mollis subsp. maxima
+Proteaceae	Persoonia	pinifolia
+Proteaceae	Petrophile	pulchella
+Proteaceae	Stenocarpus	salignus
+Proteaceae	Telopea	speciosissima
+Proteaceae	Xylomelum	pyriforme
+Ranunculaceae	Clematis	aristata
+Ranunculaceae	Clematis	glycinoides var. glycinoides
+Ranunculaceae	Ranunculus	muricatus
+Ranunculaceae	Ranunculus	plebeius
+Ranunculaceae	Ranunculus	repens
+Rhamnaceae	Alphitonia	excelsa
+Rhamnaceae	Cryptandra	amara var. amara
+Rhamnaceae	Cryptandra	amara var. longifolia
+Rhamnaceae	Cryptandra	ericoides
+Rhamnaceae	Pomaderris	discolor
+Rhamnaceae	Pomaderris	elliptica var. elliptica
+Rhamnaceae	Pomaderris	ferruginia
+Rhamnaceae	Pomaderris	intermedia
+Rhamnaceae	Pomaderris	lanigera
+Rosaceae	Duchesnia	indica
+Rosaceae	Rubus	hillii
+Rosaceae	Rubus	parvifolius
+Rosaceae	Rubus	rosifolius
+Rubiaceae	Galium	australe
+Rubiaceae	Galium	binifolium
+Rubiaceae	Galium	propinquum
+Rubiaceae	Morinda	jasminoides
+Rubiaceae	Opercularia	aspera
+Rubiaceae	Opercularia	diphylla
+Rubiaceae	Opercularia	hispidula
+Rubiaceae	Opercularia	varia
+Rubiaceae	Pomax	umbellata
+Rubiaceae	Richardia	humistrata
+Rubiaceae	Richardia	stellaris
+Rubiaceae	Sherardia	arvensis
+Rutaceae	Asterolasia	correifolia
+Rutaceae	Asterolasia	elegans
+Rutaceae	Boronia	anemonifolia subsp. variabile
+Rutaceae	Boronia	floribunda
+Rutaceae	Boronia	fraseri
+Rutaceae	Boronia	ledifolia
+Rutaceae	Boronia	pinnata
+Rutaceae	Boronia	rigens
+Rutaceae	Boronia	serrulata
+Rutaceae	Correa	reflexa var. reflexa
+Rutaceae	Crowea	saligna
+Rutaceae	Eriostemon	australasius
+Rutaceae	Leionema	dentatum
+Rutaceae	Phebalium	squamulosum ssp. squamulosum
+Rutaceae	Phebalium	squamulosum ssp. argenteum
+Rutaceae	Philotheca	buxifolia subsp. ovata
+Rutaceae	Philotheca	hispidula
+Rutaceae	Philotheca	myoporoides
+Rutaceae	Philotheca	salsolifolia
+Rutaceae	Nematolepis	squameum
+Rutaceae	Zieria	involucrata
+Rutaceae	Zieria	laevigata
+Rutaceae	Zieria	pilosa
+Rutaceae	Zieria	smithii
+Santalaceae	Exocarpos	cupressiformis
+Santalaceae	Exocarpos	strictus
+Santalaceae	Leptomeria	acida
+Santalaceae	Omphacomeria	acerba
+Sapindaceae	Alectryon	subcinereus
+Sapindaceae	Alectryon	tomentosus
+Sapindaceae	Cardiospermum	grandiflorum
+Sapindaceae	Dodonaea	multijuga
+Sapindaceae	Dodonaea	pinnata
+Sapindaceae	Dodonaea	triquetra
+Scrophulariaceae	Calceolaria	tripartita
+Scrophulariaceae	Gratiola	pedunculata
+Scrophulariaceae	Gratiola	peruviana
+Scrophulariaceae	Limosella	australis
+Scrophulariaceae	Misopates	orontium
+Scrophulariaceae	Verbascum	virgatum
+Scrophulariaceae	Veronica	anagallis-aquatica
+Scrophulariaceae	Veronica	arvensis
+Scrophulariaceae	Veronica	persica
+Scrophulariaceae	Veronica	plebeia
+Scrophulariaceae	Veronica	serpyllifolia
+Solanaceae	Cestrum	parqui
+Solanaceae	Duboisea	myoporoides
+Solanaceae	Physalis	peruviana
+Solanaceae	Solanum	americanum
+Solanaceae	Solanum	campanulatum
+Solanaceae	Solanum	nigrum
+Solanaceae	Solanum	prinophyllum
+Solanaceae	Solanum	pseudocapsicum
+Solanaceae	Solanum	seaforthianum
+Solanaceae	Solanum	vescum
+Solanaceae	Stackhousia	monogyna
+Solanaceae	Stackhousia	viminea
+Stackhousiaceae	Brachychiton	acerifolius
+Sterculiaceae	Lasiopetalum	ferrugineum var. ferrugineum
+Sterculiaceae	Lasiopetalum	joyceae
+Sterculiaceae	Lasiopetalum	macrophyllum
+Sterculiaceae	Lasiopetalum	parviflorum
+Sterculiaceae	Lasiopetalum	rufum
+Sterculiaceae	Rulingia	dasyphylla
+Sterculiaceae	Seringia	arborescens
+Stylidiaceae	Stylidium	graminifolium
+Stylidiaceae	Stylidium	lineare
+Stylidiaceae	Stylidium	productum
+Thymelaeaceae	Pimelia	curviflora var. curviflora
+Thymelaeaceae	Pimelia	linifolia ssp. Collina
+Thymelaeaceae	Pimelia	linifolia ssp. linifolia
+Thymelaeaceae	Wikstroemia	indica
+Tremandraceae	Tetratheca	ericifolia
+Tremandraceae	Tetratheca	glandulosa
+Tremandraceae	Tetratheca	thymifolia
+Tropaeolaceae	Tropaeolum	majus
+Ulmaceae	Celtis	sinensis
+Ulmaceae	Trema	tomentosa var aspera
+Urticaceae	Parietaria	judaica
+Urticaceae	Urtica	incisa
+Verbenaceae	Clerodendrum	tomentosum
+Verbenaceae	Verbena	bonariensis
+Verbenaceae	Verbena	litoralis
+Verbenaceae	Verbena	rigida
+Violaceae	Hybanthus	monopetalus
+Violaceae	Hybanthus	vernonii subsp. vernonii
+Violaceae	Viola	hederacea
+Violaceae	Viola	hederacea forma A
+Viscaceae	Notothixos	subaureus
+Vitaceae	Cayratia	clematidia
+Vitaceae	Cissus	antarctica
+Vitaceae	Cissus	hypoglauca
+Winteraceae	Tasmannia	insipida
+
+MAMMALS
+Hominidae	Homo	sapiens
+

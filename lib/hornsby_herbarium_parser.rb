@@ -124,7 +124,27 @@ end
 
 class TaxonParser
   def initialize
-    @known_taxa = [Taxon.new] #To do: make less fake
+    @known_taxa = parse_known_taxa_list
+  end
+
+  def parse_known_taxa_list
+    result = []
+    larger_group, family, genus, species = nil, nil, nil, nil
+    text = File.read("config/taxa.txt")
+    text.split("\n").each do |line|
+      strings = line.split("\t")
+      if strings.size == 1
+        larger_group = *strings
+      elsif strings.size == 3
+        family, genus, species = *strings
+        result << Taxon.new(larger_group, family, genus, species)
+      elsif strings.empty?
+        next
+      else
+        raise "Wrong number of lines in #{line}"
+      end
+    end
+    result
   end
 
   def parse_row(row)
@@ -136,14 +156,12 @@ class TaxonParser
 
 end
 
-#To do: make less fake
 class Taxon
-  def genus
-    "Homo"
-  end
+  attr_accessor :genus, :species
 
-  def species
-    "sapiens"
+  def initialize(larger_group, family, genus, species)
+    @genus = genus
+    @species = species
   end
 end
 
