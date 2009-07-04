@@ -29,7 +29,6 @@ class HornsbyHerbariumParser
 
       observers = @observer_parser.parse_row(row)
       @observers = observers unless observers.nil?
-      next unless observers.nil?
 
       location = @location_parser.parse_row(row)
       @location = location unless location.nil?
@@ -111,12 +110,9 @@ class HornsbyHerbariumEntry
 
   def self.new_if_valid(row, relative_sequential_number)
     return nil if row.nil?
-    return nil unless row.length > 2
-    return nil unless (row[1] and row[2])
-    #Assumption: all row members are strings
-    genus = row[1].strip
-    species = row[2].strip
-    new(genus, species, relative_sequential_number)
+    taxon = TaxonParser.new.parse_row(row) #To do: don't initialize a new parser each time
+    return nil if taxon.nil?
+    new(taxon.genus, taxon.species, relative_sequential_number) #To do: just pass the taxon
   end
 
   def initialize(genus, species, relative_sequential_number)
@@ -124,6 +120,31 @@ class HornsbyHerbariumEntry
     @relative_sequential_number = relative_sequential_number
   end
 
+end
+
+class TaxonParser
+  def initialize
+    @known_taxa = [Taxon.new] #To do: make less fake
+  end
+
+  def parse_row(row)
+    return nil unless (row[1] and row[2])
+    genus = row[1].strip
+    species = row[2].strip
+    @known_taxa.find{|t| t.genus == genus and t.species == species}
+  end
+
+end
+
+#To do: make less fake
+class Taxon
+  def genus
+    "Homo"
+  end
+
+  def species
+    "sapiens"
+  end
 end
 
 class ObserverParser
