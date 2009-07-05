@@ -9,16 +9,16 @@ class HornsbyHerbariumParser
   end
 
   def initialize(filename)
-    @observer_parser = ObserverParser.new
     @location_parser = LocationParser.new
     @hornsby_herbarium_entry_creator = HornsbyHerbariumEntryCreator.new
     basename = File.basename(filename, ".*")
     @location = @location_parser.parse_string(basename)
     @date = parse_date_from_filename(filename)
-    @date_parser = DateParser.new
+    @general_parser = GeneralParser.new
     excel = Excel.new(filename)
     excel.default_sheet = excel.sheets.first #Assumption: only the first sheet is used in a spreadsheet
     @entries = []
+    @observers = []
     0.upto(excel.last_row) do |line_number|
       row = excel.row(line_number)
       next if row.nil?
@@ -27,14 +27,19 @@ class HornsbyHerbariumParser
       @entries << entry unless entry.nil?
       next unless entry.nil?
 
-      observers = @observer_parser.parse_row(row)
-      @observers = observers unless observers.nil?
-
       location = @location_parser.parse_row(row)
       @location = location unless location.nil?
 
-      date = @date_parser.parse_row(row)
-      @date = date unless date.nil?
+      tokens = @general_parser.parse_row(row)
+      tokens.each do |token|
+        if token.token_type == :date
+          @date = token.token_value
+        elsif token.token_type == :observer
+          @observers << token.token_value
+        else
+          raise "Uknown type"
+        end
+      end
     end
   end
 
@@ -122,6 +127,42 @@ class HornsbyHerbariumEntry
 
 end
 
+class GeneralParser
+  def initialize
+    @observer_parser = ObserverParser.new
+    @date_parser = DateParser.new
+  end
+
+  def parse_row(row)
+    results = []
+    row.each do |cell|
+      results += parse_cell(cell)
+    end
+    results
+  end
+
+  def parse_cell(cell)
+    results = []
+    cell.split(/, ?/).each do |string|
+      if @observer_parser.has_match_for?(string)
+        results << Token.new(:observer, string)
+      elsif @date_parser.parse_string(string)
+        results << Token.new(:date, @date_parser.parse_string(string))
+      end
+    end
+    results
+  end
+
+end
+
+class Token
+  attr_reader :token_type, :token_value
+
+  def initialize(token_type, token_value)
+    @token_type, @token_value = token_type, token_value
+  end
+end
+
 class TaxonParser
   def initialize
     @known_taxa = parse_known_taxa_list
@@ -172,16 +213,6 @@ class ObserverParser
 
   def has_match_for?(string)
     @known_observers.any?{|observer| string.include?(observer)}
-  end
-
-  def parse_row(row)
-    result = []
-    row.each do |cell|
-      next if cell.nil?
-      result << cell if has_match_for?(cell)
-    end
-    return nil if result.empty?
-    result
   end
 
 end
