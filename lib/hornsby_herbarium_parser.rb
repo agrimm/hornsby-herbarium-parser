@@ -143,6 +143,7 @@ class GeneralParser
 
   def parse_cell(cell)
     results = []
+    return results if cell.nil? #To satisfy runcoderun
     cell.split(/, ?/).each do |string|
       if @observer_parser.has_match_for?(string)
         results << Token.new(:observer, string)
