@@ -117,11 +117,11 @@ class HornsbyHerbariumEntry
     return nil if row.nil?
     taxon = TaxonParser.new.parse_row(row) #To do: don't initialize a new parser each time
     return nil if taxon.nil?
-    new(taxon.genus, taxon.species, relative_sequential_number) #To do: just pass the taxon
+    new(taxon, relative_sequential_number)
   end
 
-  def initialize(genus, species, relative_sequential_number)
-    @binomial = [genus, species].join(" ")
+  def initialize(taxon, relative_sequential_number)
+    @binomial = [taxon.genus, taxon.species].join(" ")
     @relative_sequential_number = relative_sequential_number
   end
 

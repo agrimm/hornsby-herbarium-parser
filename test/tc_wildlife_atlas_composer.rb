@@ -12,7 +12,7 @@ module TestWildlifeAtlasHelper
   SIMPLE_EXAMPLE_SPREADSHEET_FILENAME = "test/example_spreadsheets/Las Vegas.xls"
 
   def assert_wildlife_atlas_output_equals(expected_csv_output_filename, entry_values, observers, sighting_date_string, location, initial_spreadsheet_filename, failure_message)
-    entries = entry_values.map{|e| HornsbyHerbariumEntry.new(e[:genus], e[:species], e[:relative_sequential_number])}
+    entries = entry_values.map{|e| HornsbyHerbariumEntry.new(e[:taxon], e[:relative_sequential_number])}
     temporary_output_filename = "test/example_spreadsheets/temporary_output.csv"
     hornsby_herbarium_spreadsheet = HornsbyHerbariumSpreadsheet.new_using_values(entries, observers, sighting_date_string,  location)
     wildlife_atlas_composer = WildlifeAtlasComposer.new_using_wildlife_atlas_filename(initial_spreadsheet_filename, hornsby_herbarium_spreadsheet)
@@ -58,7 +58,8 @@ class TestWildlifeAtlasComposer < Test::Unit::TestCase
   end
 
   def test_single_entry_scenario
-    entry_values = [{:genus => "Homo", :species => "sapiens", :relative_sequential_number => 1}]
+    taxon = Taxon.new("", "", "Homo", "sapiens")
+    entry_values = [{:taxon => taxon, :relative_sequential_number => 1}]
     observers = "Andrew Grimm"
     sighting_date_string = "21/6/2009"
     location = "Las Vegas"
