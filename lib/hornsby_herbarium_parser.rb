@@ -1,5 +1,6 @@
 require "rubygems"
 require "roo"
+require "editalign"
 
 class HornsbyHerbariumParser
   attr_reader :entries, :observers, :location
@@ -94,7 +95,10 @@ class HornsbyHerbariumParser
   end
 
   def validation_errors_to_string
-    validation_error_strings = @invalid_taxa_details.map{|invalid_taxon_details| "Partially correct taxon name #{invalid_taxon_details[:genus]} #{invalid_taxon_details[:species]}" }
+    validation_error_strings = @invalid_taxa_details.map do |invalid_taxon_details|
+      most_similar_taxon = @general_parser.find_most_similar_taxon(invalid_taxon_details[:genus], invalid_taxon_details[:species])
+      "Partially correct taxon name #{invalid_taxon_details[:genus]} #{invalid_taxon_details[:species]} (possibly similar: #{most_similar_taxon.genus} #{most_similar_taxon.species})"
+    end
     validation_error_strings.join("\n")
   end
 end
@@ -171,6 +175,9 @@ class GeneralParser
     results
   end
 
+  def find_most_similar_taxon(genus, species)
+    @taxon_parser.find_most_similar_taxon(genus, species)
+  end
 end
 
 class Token
@@ -223,6 +230,15 @@ class TaxonParser
     end
   end
 
+  def find_most_similar_taxon(genus, species)
+    sorted_taxa = @known_taxa.sort_by do |taxon|
+      next 1000 unless ((taxon.genus == genus) or (taxon.species == species))
+      alignment = EditAlign::Alignment.new(taxon.genus + " " + taxon.species, genus + " " + species)
+      alignment.edit_distance
+    end
+    most_similar_taxon = sorted_taxa.first
+    most_similar_taxon
+  end
 end
 
 class Taxon

@@ -128,5 +128,28 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     assert_hornsby_herbarium_parser_raises hornsby_herbarium_spreadsheet_filename, expected_exception_type, expected_exception_message, failure_message
   end
 
+end
+
+module TestTaxonParserHelper
+  def assert_finds_most_similar_taxon(expected_genus, expected_species, genus, species, failure_message)
+    taxon_parser = TaxonParser.new
+    taxon = taxon_parser.find_most_similar_taxon(genus, species)
+    assert_equal expected_genus, taxon.genus, failure_message
+    assert_equal expected_species, taxon.species, failure_message
+  end
+
+end
+
+class TestTaxonParser < Test::Unit::TestCase
+  include TestTaxonParserHelper
+
+  def test_find_most_similar_taxon
+    genus = "Blechnum"
+    species = "ambiguus"
+    expected_genus = "Blechnum"
+    expected_species = "ambiguum"
+    failure_message = "Can't find most similar taxon"
+    assert_finds_most_similar_taxon expected_genus, expected_species, genus, species, failure_message
+  end
 
 end
