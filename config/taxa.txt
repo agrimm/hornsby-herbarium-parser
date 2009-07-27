@@ -207,7 +207,7 @@ Orchidaceae	Acianthus	fornicatus
 Orchidaceae	Bulbophyllum	shepherdii
 Orchidaceae	Caladenia	alata
 Orchidaceae	Caladenia	caerulea
-Orchidaceae	Caladenia	carnea 
+Orchidaceae	Caladenia	carnea
 Orchidaceae	Caladenia	catenata
 Orchidaceae	Caladenia	testacea
 Orchidaceae	Calanthe	triplicata
@@ -347,7 +347,7 @@ Poaceae	Hainardia	cylindrica
 Poaceae	Hemarthria	uncinata
 Poaceae	Holcus	lanatus
 Poaceae	Hyparrhenia	hirta
-Poaceae	Imperata	cylindrica 
+Poaceae	Imperata	cylindrica
 Poaceae	Joycea	pallida
 Poaceae	Lolium	perenne
 Poaceae	Melinis	repens
@@ -408,7 +408,7 @@ ANGIOSPERMS DICOTS
 Acanthaceae	Brunoniella	australis
 Acanthaceae	Brunoniella	pumilio
 Acanthaceae	Pseuderanthemum	variabile
-Acanthaceae	Thunbergia 	alata
+Acanthaceae	Thunbergia	alata
 Aceraceae	Acer	negundo
 Aizoaceae	Tetragonia	tetragonioides
 Amaranthaceae	Alternanthera	denticulata
@@ -433,8 +433,8 @@ Apiaceae	Platysace	clelandii
 Apiaceae	Platysace	ericoides
 Apiaceae	Platysace	lanceolata
 Apiaceae	Platysace	linearifolia
-Apiaceae	Xanthosia 	pilosa
-Apiaceae	Xanthosia 	tridentata
+Apiaceae	Xanthosia	pilosa
+Apiaceae	Xanthosia	tridentata
 Apocynaceae	Mandevillea	laxa
 Apocynaceae	Parsonsia	straminea
 Araliaceae	Astrotricha	floccosa
@@ -701,7 +701,7 @@ Fabaceae	Mirbelia	rubiifolia
 Fabaceae	Mirbelia	speciosa subsp. speciosa
 Fabaceae	Phyllota	grandiflora
 Fabaceae	Phyllota	phylicoides
-Fabaceae	Platylobium	formosum 
+Fabaceae	Platylobium	formosum
 Fabaceae	Podolobium	ilicifolium
 Fabaceae	Pultenaea	daphnoides
 Fabaceae	Pultenaea	elliptica
@@ -809,7 +809,7 @@ Mimosaceae	Acacia	floribunda
 Mimosaceae	Acacia	hispidula
 Mimosaceae	Acacia	implexa
 Mimosaceae	Acacia	irrorata
-Mimosaceae	Acacia	juncifolia 
+Mimosaceae	Acacia	juncifolia
 Mimosaceae	Acacia	linifolia
 Mimosaceae	Acacia	longifolia ssp longifolia
 Mimosaceae	Acacia	longissima
@@ -862,7 +862,7 @@ Myrtaceae	Corymbia	gummifera
 Myrtaceae	Darwinia	biflora
 Myrtaceae	Darwinia	fascicularis subsp. fascicularis
 Myrtaceae	Darwinia	peduncularis
-Myrtaceae	Darwinia	procera 
+Myrtaceae	Darwinia	procera
 Myrtaceae	Eucalyptus	acmenoides
 Myrtaceae	Eucalyptus	agglomerata
 Myrtaceae	Eucalyptus	beyeriana
@@ -890,7 +890,7 @@ Myrtaceae	Kunzea	capitata
 Myrtaceae	Kunzea	ericoides
 Myrtaceae	Kunzea	rupestris
 Myrtaceae	Leptospermum	arachnoides
-Myrtaceae	Leptospermum	deanei 
+Myrtaceae	Leptospermum	deanei
 Myrtaceae	Leptospermum	grandifolium
 Myrtaceae	Leptospermum	juniperinum
 Myrtaceae	Leptospermum	parvifolium
@@ -902,7 +902,7 @@ Myrtaceae	Melaleuca	decora
 Myrtaceae	Melaleuca	ericifolia
 Myrtaceae	Melaleuca	quinquenervia
 Myrtaceae	Melaleuca	styphelioides
-Myrtaceae	Micromyrtus	blakelyi 
+Myrtaceae	Micromyrtus	blakelyi
 Myrtaceae	Micromyrtus	ciliata
 Myrtaceae	Rhodamnia	rubescens
 Myrtaceae	Syncarpia	glomulifera
@@ -968,7 +968,7 @@ Proteaceae	Banksia	marginata
 Proteaceae	Banksia	oblongifolia
 Proteaceae	Banksia	serrata
 Proteaceae	Banksia	spinulosa var. collina
-Proteaceae	Banksia	spinulosa 
+Proteaceae	Banksia	spinulosa
 Proteaceae	Conospermum	ericifolium
 Proteaceae	Conospermum	longifolium subsp. longifolium
 Proteaceae	Conospermum	longifolium subsp. mediale

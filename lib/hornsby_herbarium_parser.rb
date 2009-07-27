@@ -181,6 +181,7 @@ class TaxonParser
     text = File.read("config/taxa.txt")
     text.split("\n").each do |line|
       strings = line.split("\t")
+      raise "Spaces at the start or end of taxon names with #{strings.inspect}" unless strings.all?{|string| string == string.strip} #Not unit tested
       if strings.size == 1
         larger_group = *strings
       elsif strings.size == 3
