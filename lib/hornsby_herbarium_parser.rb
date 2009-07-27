@@ -39,7 +39,7 @@ class HornsbyHerbariumParser
         elsif token.token_type == :manual_total
           @manual_total = token.token_value
         else
-          raise "Uknown type"
+          raise "Unknown type"
         end
       end
     end

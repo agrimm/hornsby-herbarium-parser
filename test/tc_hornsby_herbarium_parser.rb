@@ -50,7 +50,7 @@ module TestHelper
       hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
     rescue expected_exception_type => actual_exception
       assert_equal expected_exception_message, actual_exception.message, "Wrong error message " + failure_message
-    rescue actual_exception
+    rescue StandardError => actual_exception
       flunk "Wrong type of exception: #{actual_exception.inspect} " + failure_message
     else
       flunk "No exception at all " + failure_message
