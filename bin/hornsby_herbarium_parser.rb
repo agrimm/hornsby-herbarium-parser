@@ -15,6 +15,8 @@ initial_wildlife_atlas_spreadsheet_filename = "test/example_spreadsheets/emptySc
 wildlife_atlas_output_filename = ARGV[1]
 
 hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_filename)
+validation_errors_string = hornsby_herbarium_parser.validation_errors_to_string
+STDERR.puts validation_errors_string unless validation_errors_string.empty?
 hornsby_herbarium_spreadsheet = hornsby_herbarium_parser.to_spreadsheet
 
 wildlife_atlas_composer = WildlifeAtlasComposer.new_using_wildlife_atlas_filename(initial_wildlife_atlas_spreadsheet_filename, hornsby_herbarium_spreadsheet)

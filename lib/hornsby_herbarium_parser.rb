@@ -92,6 +92,11 @@ class HornsbyHerbariumParser
     raise "Total is inconsistent: recorded as #{@manual_total}, should be #{entry_count}" if @manual_total != entry_count
     HornsbyHerbariumSpreadsheet.new_using_values(@entries, @observers.first, sighting_date_string, @location)
   end
+
+  def validation_errors_to_string
+    validation_error_strings = @invalid_taxa_details.map{|invalid_taxon_details| "Partially correct taxon name #{invalid_taxon_details[:genus]} #{invalid_taxon_details[:species]}" }
+    validation_error_strings.join("\n")
+  end
 end
 
 class HornsbyHerbariumEntryCreator
