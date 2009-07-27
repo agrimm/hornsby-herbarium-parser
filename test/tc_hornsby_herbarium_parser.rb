@@ -6,6 +6,7 @@ require "hornsby_herbarium_parser"
 module TestHelper
   LARGER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME = "test/example_spreadsheets/Berowra 15052009Species List.xls" #TODO: remove from turned off test #Not in revision control for copyright reasons
   SIMPLE_EXAMPLE_SPREADSHEET_FILENAME = "test/example_spreadsheets/Las Vegas.xls"
+  INCONSISTENT_TOTAL_SPREADSHEET_FILENAME = "test/example_spreadsheets/Reno.xls"
 
   def assert_parser_entries_equals(expected_count, hornsby_herbarium_spreadsheet_filename, failure_message)
     hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
@@ -44,6 +45,17 @@ module TestHelper
     assert_equal expected_relative_sequential_numbers, actual_relative_sequential_numbers, failure_message
   end
 
+  def assert_hornsby_herbarium_parser_raises(hornsby_herbarium_spreadsheet_filename, expected_exception_type, expected_exception_message, failure_message)
+    begin
+      hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
+    rescue expected_exception_type => actual_exception
+      assert_equal expected_exception_message, actual_exception.message, "Wrong error message " + failure_message
+    rescue actual_exception
+      flunk "Wrong type of exception: #{actual_exception.inspect} " + failure_message
+    else
+      flunk "No exception at all " + failure_message
+    end
+  end
 end
 
 class TestHornsbyHerbariumParser < Test::Unit::TestCase
@@ -98,4 +110,11 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     assert_relative_sequential_numbers_equals expected_relative_sequential_numbers, hornsby_herbarium_spreadsheet_filename, failure_message
   end
 
+  def test_detect_inconsistent_count
+    hornsby_herbarium_spreadsheet_filename = INCONSISTENT_TOTAL_SPREADSHEET_FILENAME
+    expected_exception_type = RuntimeError
+    expected_exception_message = "Total is inconsistent: recorded as 2, should be 1"
+    failure_message = "Fails to detect inconsistent total"
+    assert_hornsby_herbarium_parser_raises hornsby_herbarium_spreadsheet_filename, expected_exception_type, expected_exception_message, failure_message
+  end
 end

@@ -36,11 +36,14 @@ class HornsbyHerbariumParser
           @date = token.token_value
         elsif token.token_type == :observer
           @observers << token.token_value
+        elsif token.token_type == :manual_total
+          @manual_total = token.token_value
         else
           raise "Uknown type"
         end
       end
     end
+    raise "Total is inconsistent: recorded as #{@manual_total}, should be #{entry_count}" if @manual_total != entry_count
   end
 
   def entry_count
@@ -131,6 +134,7 @@ class GeneralParser
   def initialize
     @observer_parser = ObserverParser.new
     @date_parser = DateParser.new
+    @manual_total_parser = ManualTotalParser.new
   end
 
   def parse_row(row)
@@ -149,6 +153,8 @@ class GeneralParser
         results << Token.new(:observer, string)
       elsif @date_parser.parse_string(string)
         results << Token.new(:date, @date_parser.parse_string(string))
+      elsif @manual_total_parser.parse_string(string)
+        results << Token.new(:manual_total, @manual_total_parser.parse_string(string))
       end
     end
     results
@@ -189,6 +195,7 @@ class TaxonParser
     result
   end
 
+  #To do: handle scenarios of partial matches somehow
   def parse_row(row)
     return nil unless (row[1] and row[2])
     genus = row[1].strip
@@ -256,6 +263,18 @@ class DateParser
       result = Date.parse([year_s, month_s, day_s].join("-"), true)
     rescue
     end
+    result
+  end
+
+end
+
+class ManualTotalParser
+
+  def parse_string(string)
+    regexp = /^Count *= *(\d+)$/
+    match_data = regexp.match(string)
+    return nil if match_data.nil?
+    result = Integer(match_data[1])
     result
   end
 
