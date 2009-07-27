@@ -149,12 +149,12 @@ class GeneralParser
     results = []
     return results if cell.nil? #To satisfy runcoderun
     cell.split(/, ?/).each do |string|
-      if @observer_parser.has_match_for?(string)
-        results << Token.new(:observer, string)
-      elsif @date_parser.parse_string(string)
-        results << Token.new(:date, @date_parser.parse_string(string))
-      elsif @manual_total_parser.parse_string(string)
-        results << Token.new(:manual_total, @manual_total_parser.parse_string(string))
+      if result = @observer_parser.parse_string(string)
+        results << result
+      elsif result = @date_parser.parse_string(string)
+        results << result
+      elsif result = @manual_total_parser.parse_string(string)
+        results << result
       end
     end
     results
@@ -220,8 +220,11 @@ class ObserverParser
     @known_observers = File.read("config/observers.txt").split("\n")
   end
 
-  def has_match_for?(string)
-    @known_observers.any?{|observer| string.include?(observer)}
+  def parse_string(string)
+    match_found = @known_observers.find{|observer| string.include?(observer)}
+    return nil unless match_found
+    token = Token.new(:observer, string)
+    token
   end
 
 end
@@ -247,24 +250,17 @@ end
 
 class DateParser
 
-  def parse_row(row)
-    row.each do |cell|
-      next if cell.nil?
-      result = parse_string(cell)
-      return result unless result.nil?
-    end
-    nil
-  end
-
   def parse_string(string)
     day_s, month_s, year_s = string.split("-")
     return nil if [day_s, month_s, year_s].any?{|s| s.nil?}
-    result = nil
+    token_value = nil
     begin
-      result = Date.parse([year_s, month_s, day_s].join("-"), true)
+      token_value = Date.parse([year_s, month_s, day_s].join("-"), true)
     rescue
     end
-    result
+    return nil if token_value.nil?
+    token = Token.new(:date, token_value)
+    token
   end
 
 end
@@ -275,8 +271,9 @@ class ManualTotalParser
     regexp = /^Count *= *(\d+)$/
     match_data = regexp.match(string)
     return nil if match_data.nil?
-    result = Integer(match_data[1])
-    result
+    token_value = Integer(match_data[1])
+    token = Token.new(:manual_total, token_value)
+    token
   end
 
 end
