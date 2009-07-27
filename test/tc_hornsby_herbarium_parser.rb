@@ -7,6 +7,7 @@ module TestHelper
   LARGER_HORNSBY_HERBARIUM_SPREADSHEET_FILENAME = "test/example_spreadsheets/Berowra 15052009Species List.xls" #TODO: remove from turned off test #Not in revision control for copyright reasons
   SIMPLE_EXAMPLE_SPREADSHEET_FILENAME = "test/example_spreadsheets/Las Vegas.xls"
   INCONSISTENT_TOTAL_SPREADSHEET_FILENAME = "test/example_spreadsheets/Reno.xls"
+  PARTIALLY_CORRECT_TAXON_NAME_SPREADSHEET_FILENAME = "test/example_spreadsheets/Carson city.xls"
 
   def assert_parser_entries_equals(expected_count, hornsby_herbarium_spreadsheet_filename, failure_message)
     hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
@@ -48,6 +49,7 @@ module TestHelper
   def assert_hornsby_herbarium_parser_raises(hornsby_herbarium_spreadsheet_filename, expected_exception_type, expected_exception_message, failure_message)
     begin
       hornsby_herbarium_parser = HornsbyHerbariumParser.new_using_filename(hornsby_herbarium_spreadsheet_filename)
+      hornsby_herbarium_parser.to_spreadsheet
     rescue expected_exception_type => actual_exception
       assert_equal expected_exception_message, actual_exception.message, "Wrong error message " + failure_message
     rescue StandardError => actual_exception
@@ -117,4 +119,14 @@ class TestHornsbyHerbariumParser < Test::Unit::TestCase
     failure_message = "Fails to detect inconsistent total"
     assert_hornsby_herbarium_parser_raises hornsby_herbarium_spreadsheet_filename, expected_exception_type, expected_exception_message, failure_message
   end
+
+  def test_detect_partially_correct_taxon_names
+    hornsby_herbarium_spreadsheet_filename = PARTIALLY_CORRECT_TAXON_NAME_SPREADSHEET_FILENAME
+    expected_exception_type = PartiallyCorrectTaxonNameError
+    expected_exception_message = "1 partially correct taxon names"
+    failure_message = "Fails to detect partially correct taxon names"
+    assert_hornsby_herbarium_parser_raises hornsby_herbarium_spreadsheet_filename, expected_exception_type, expected_exception_message, failure_message
+  end
+
+
 end

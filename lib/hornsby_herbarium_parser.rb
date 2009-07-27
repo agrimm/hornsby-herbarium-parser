@@ -17,18 +17,17 @@ class HornsbyHerbariumParser
     @general_parser = GeneralParser.new
     excel = Excel.new(filename)
     excel.default_sheet = excel.sheets.first #Assumption: only the first sheet is used in a spreadsheet
+    @invalid_taxa_details = []
     @entries = []
     @observers = []
     0.upto(excel.last_row) do |line_number|
       row = excel.row(line_number)
       next if row.nil?
 
-      entry = @hornsby_herbarium_entry_creator.create_if_valid(row)
-      @entries << entry unless entry.nil?
-      next unless entry.nil?
-
       location = @location_parser.parse_row(row)
       @location = location unless location.nil?
+
+      taxon = nil
 
       tokens = @general_parser.parse_row(row)
       tokens.each do |token|
@@ -38,12 +37,19 @@ class HornsbyHerbariumParser
           @observers << token.token_value
         elsif token.token_type == :manual_total
           @manual_total = token.token_value
+        elsif token.token_type == :taxon
+          taxon = token.token_value
+        elsif token.token_type == :invalid_taxon
+          token_value = token.token_value
+          @invalid_taxa_details << token_value
         else
           raise "Unknown type"
         end
       end
+
+      entry = @hornsby_herbarium_entry_creator.create(taxon) unless taxon.nil?
+      @entries << entry unless entry.nil?
     end
-    raise "Total is inconsistent: recorded as #{@manual_total}, should be #{entry_count}" if @manual_total != entry_count
   end
 
   def entry_count
@@ -81,6 +87,9 @@ class HornsbyHerbariumParser
   end
 
   def to_spreadsheet
+    raise PartiallyCorrectTaxonNameError, "#{@invalid_taxa_details.size} partially correct taxon names" unless @invalid_taxa_details.empty?
+
+    raise "Total is inconsistent: recorded as #{@manual_total}, should be #{entry_count}" if @manual_total != entry_count
     HornsbyHerbariumSpreadsheet.new_using_values(@entries, @observers.first, sighting_date_string, @location)
   end
 end
@@ -91,8 +100,8 @@ class HornsbyHerbariumEntryCreator
     @entries_created = 0
   end
 
-  def create_if_valid(row)
-    result = HornsbyHerbariumEntry.new_if_valid(row, @entries_created + 1)
+  def create(taxon)
+    result = HornsbyHerbariumEntry.new(taxon, @entries_created + 1)
     @entries_created += 1 unless result.nil?
     result
   end
@@ -116,13 +125,6 @@ end
 class HornsbyHerbariumEntry
   attr_reader :binomial, :relative_sequential_number
 
-  def self.new_if_valid(row, relative_sequential_number)
-    return nil if row.nil?
-    taxon = TaxonParser.new.parse_row(row) #To do: don't initialize a new parser each time
-    return nil if taxon.nil?
-    new(taxon, relative_sequential_number)
-  end
-
   def initialize(taxon, relative_sequential_number)
     @binomial = [taxon.genus, taxon.species].join(" ")
     @relative_sequential_number = relative_sequential_number
@@ -135,10 +137,14 @@ class GeneralParser
     @observer_parser = ObserverParser.new
     @date_parser = DateParser.new
     @manual_total_parser = ManualTotalParser.new
+    @taxon_parser = TaxonParser.new
   end
 
   def parse_row(row)
     results = []
+    if result = @taxon_parser.parse_row(row)
+      results << result
+    end
     row.each do |cell|
       results += parse_cell(cell)
     end
@@ -196,12 +202,20 @@ class TaxonParser
     result
   end
 
-  #To do: handle scenarios of partial matches somehow
   def parse_row(row)
     return nil unless (row[1] and row[2])
     genus = row[1].strip
     species = row[2].strip
-    @known_taxa.find{|t| t.genus == genus and t.species == species}
+    token_value = @known_taxa.find{|t| t.genus == genus and t.species == species}
+    if (not token_value.nil?)
+      token = Token.new(:taxon, token_value)
+      token
+    elsif @known_taxa.any?{|t| (t.genus == genus) or (t.species == species)}
+      token = Token.new(:invalid_taxon, {:genus => genus, :species => species})
+      token
+    else
+      nil
+    end
   end
 
 end
@@ -277,3 +291,7 @@ class ManualTotalParser
   end
 
 end
+
+class PartiallyCorrectTaxonNameError < RuntimeError
+end
+
