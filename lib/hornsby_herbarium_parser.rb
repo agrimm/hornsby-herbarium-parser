@@ -241,6 +241,15 @@ class TaxonParser
   end
 end
 
+class EditAlign::Alignment
+
+  #If the taxon from known taxa list is longer than the supplied taxon's name, don't penalize it too heavily
+  def delete(source_item)
+    0.1
+  end
+
+end
+
 class Taxon
   attr_accessor :genus, :species
 

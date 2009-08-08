@@ -152,4 +152,13 @@ class TestTaxonParser < Test::Unit::TestCase
     assert_finds_most_similar_taxon expected_genus, expected_species, genus, species, failure_message
   end
 
+  def test_find_similar_taxon_when_supplied_name_is_shorter_than_correct_name
+    genus = "Leptospermum"
+    species = "polygalifolium"
+    expected_genus = "Leptospermum"
+    expected_species = "polygalifolium subsp. polygalifolium"
+    failure_message = "Can't find similar taxon when the supplied name is shorter than the correct name"
+    assert_finds_most_similar_taxon expected_genus, expected_species, genus, species, failure_message
+  end
+
 end
